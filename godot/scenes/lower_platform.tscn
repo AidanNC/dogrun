@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo7l8f823wycy"]
+
+[ext_resource type="Texture2D" uid="uid://cxnmbad0ab6bd" path="res://assets/Lower Platform.png" id="1_00q7e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_veui5"]
+size = Vector2(1032, 424)
+
+[node name="lower_platform" type="StaticBody2D"]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(12, 276)
+shape = SubResource("RectangleShape2D_veui5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_00q7e")

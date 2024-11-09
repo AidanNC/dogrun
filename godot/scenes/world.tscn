@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://duq34pcxha51a"]
+[gd_scene load_steps=6 format=3 uid="uid://duq34pcxha51a"]
 
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="1_4b21f"]
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="2_oxcol"]
 [ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="3_qoqvr"]
 [ext_resource type="PackedScene" uid="uid://dnx1kc7gjs78a" path="res://scenes/parallax_background.tscn" id="4_1xx7g"]
+[ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="5_vbyri"]
 
 [node name="World" type="Node2D"]
 position = Vector2(2256, 1136)
@@ -13,9 +14,6 @@ position = Vector2(-1216, -656)
 
 [node name="Platform1" parent="." instance=ExtResource("3_qoqvr")]
 position = Vector2(56, -352)
-
-[node name="Platform8" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(-864, -288)
 
 [node name="Platform9" parent="." instance=ExtResource("3_qoqvr")]
 position = Vector2(-1784, -440)
@@ -45,3 +43,7 @@ position = Vector2(216, -552)
 position = Vector2(2856, -744)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("4_1xx7g")]
+visible = false
+
+[node name="lower_platform" parent="." instance=ExtResource("5_vbyri")]
+position = Vector2(-952, -360)
