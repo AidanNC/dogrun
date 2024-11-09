@@ -1,12 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://dnx1kc7gjs78a"]
+[gd_scene load_steps=3 format=3 uid="uid://dnx1kc7gjs78a"]
 
-[ext_resource type="Texture2D" uid="uid://db2qpyxunysw1" path="res://assets/Main BG.png" id="1_vd1ge"]
+[ext_resource type="Texture2D" uid="uid://vr0sexbbagty" path="res://assets/Bacgkround v.2.png" id="1_3n8ic"]
+[ext_resource type="Texture2D" uid="uid://dsn57tvjw2vep" path="res://assets/Ceiling pipes.png" id="2_oms3n"]
 
 [node name="ParallaxBackground" type="ParallaxBackground"]
 
-[node name="ParallaxLayer" type="ParallaxLayer" parent="."]
+[node name="MainBG" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(0.01, 0.1)
 motion_mirroring = Vector2(1920, 0)
 
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxLayer"]
-texture = ExtResource("1_vd1ge")
+[node name="Sprite2D" type="Sprite2D" parent="MainBG"]
+texture = ExtResource("1_3n8ic")
+centered = false
+
+[node name="CeilingPipes" type="ParallaxLayer" parent="."]
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CeilingPipes"]
+texture = ExtResource("2_oms3n")
 centered = false

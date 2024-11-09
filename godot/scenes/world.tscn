@@ -1,22 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://duq34pcxha51a"]
+[gd_scene load_steps=7 format=3 uid="uid://duq34pcxha51a"]
 
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="1_4b21f"]
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="2_oxcol"]
 [ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="3_qoqvr"]
 [ext_resource type="PackedScene" uid="uid://dnx1kc7gjs78a" path="res://scenes/parallax_background.tscn" id="4_1xx7g"]
 [ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="5_vbyri"]
+[ext_resource type="PackedScene" uid="uid://u3gdb72ahf7p" path="res://scenes/parallax_foreground.tscn" id="6_c32sl"]
 
 [node name="World" type="Node2D"]
-position = Vector2(2256, 1136)
+position = Vector2(2264, 1320)
 
 [node name="Player" parent="." instance=ExtResource("1_4b21f")]
 position = Vector2(-1216, -656)
 
 [node name="Platform1" parent="." instance=ExtResource("3_qoqvr")]
 position = Vector2(56, -352)
-
-[node name="Platform9" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(-1784, -440)
 
 [node name="Platform2" parent="." instance=ExtResource("3_qoqvr")]
 position = Vector2(976, -200)
@@ -36,6 +34,24 @@ position = Vector2(5568, -520)
 [node name="Platform4" parent="." instance=ExtResource("3_qoqvr")]
 position = Vector2(2816, -536)
 
+[node name="lower_platform" parent="." instance=ExtResource("5_vbyri")]
+position = Vector2(-848, -192)
+
+[node name="lower_platform6" parent="." instance=ExtResource("5_vbyri")]
+position = Vector2(-1880, -192)
+
+[node name="lower_platform2" parent="." instance=ExtResource("5_vbyri")]
+position = Vector2(176, -192)
+
+[node name="lower_platform3" parent="." instance=ExtResource("5_vbyri")]
+position = Vector2(1208, -192)
+
+[node name="lower_platform4" parent="." instance=ExtResource("5_vbyri")]
+position = Vector2(2240, -192)
+
+[node name="lower_platform5" parent="." instance=ExtResource("5_vbyri")]
+position = Vector2(3272, -200)
+
 [node name="Slug" parent="." instance=ExtResource("2_oxcol")]
 position = Vector2(216, -552)
 
@@ -43,7 +59,5 @@ position = Vector2(216, -552)
 position = Vector2(2856, -744)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("4_1xx7g")]
-visible = false
 
-[node name="lower_platform" parent="." instance=ExtResource("5_vbyri")]
-position = Vector2(-952, -360)
+[node name="ParallaxForeground" parent="." instance=ExtResource("6_c32sl")]

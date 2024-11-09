@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://u3gdb72ahf7p"]
+
+[ext_resource type="Texture2D" uid="uid://nlag5w8xul67" path="res://assets/FG element 1.png" id="1_8tcnd"]
+[ext_resource type="Texture2D" uid="uid://ckvc1bahfm053" path="res://assets/FG element 2.png" id="2_uwa6v"]
+[ext_resource type="Texture2D" uid="uid://b81g6ffw4swoy" path="res://assets/FG element 3.png" id="3_6e2g3"]
+[ext_resource type="Texture2D" uid="uid://c53q6ram7g6uh" path="res://assets/FG pipes .png" id="4_1daek"]
+
+[node name="ParallaxForeground" type="ParallaxBackground"]
+layer = 10
+scroll_base_offset = Vector2(0, 460)
+
+[node name="FGelement1" type="ParallaxLayer" parent="."]
+z_index = 10
+z_as_relative = false
+position = Vector2(0, 2)
+motion_scale = Vector2(1.2, 1)
+motion_mirroring = Vector2(4000, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FGelement1"]
+texture = ExtResource("1_8tcnd")
+centered = false
+
+[node name="FGelement2" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(1.3, 1)
+motion_mirroring = Vector2(3840, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FGelement2"]
+texture = ExtResource("2_uwa6v")
+centered = false
+
+[node name="FGelement3" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(1.2, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FGelement3"]
+texture = ExtResource("3_6e2g3")
+centered = false
+
+[node name="FGpipes" type="ParallaxLayer" parent="."]
+motion_scale = Vector2(1.4, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="FGpipes"]
+texture = ExtResource("4_1daek")
+centered = false

@@ -145,7 +145,6 @@ shape = SubResource("RectangleShape2D_uhu0o")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(2, -91)
-zoom = Vector2(1.2, 1.2)
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
