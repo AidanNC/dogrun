@@ -1,22 +1,43 @@
 [gd_scene load_steps=4 format=3 uid="uid://duq34pcxha51a"]
 
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="1_4b21f"]
-[ext_resource type="PackedScene" uid="uid://dmbu8uqqe5qyx" path="res://scenes/slime.tscn" id="2_oxcol"]
+[ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="2_oxcol"]
 [ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="3_qoqvr"]
 
 [node name="World" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_4b21f")]
-position = Vector2(1007, 611)
-
-[node name="Slime" parent="." instance=ExtResource("2_oxcol")]
-position = Vector2(1390, 474)
+position = Vector2(-1104, 928)
 
 [node name="Platform1" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(1112, 1042)
+position = Vector2(1024, 1232)
+
+[node name="Platform8" parent="." instance=ExtResource("3_qoqvr")]
+position = Vector2(104, 1296)
+
+[node name="Platform9" parent="." instance=ExtResource("3_qoqvr")]
+position = Vector2(-816, 1144)
 
 [node name="Platform2" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(2102, 762)
+position = Vector2(1944, 1384)
 
 [node name="Platform3" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(3272, 874)
+position = Vector2(2864, 1224)
+
+[node name="Platform5" parent="." instance=ExtResource("3_qoqvr")]
+position = Vector2(4704, 1208)
+
+[node name="Platform6" parent="." instance=ExtResource("3_qoqvr")]
+position = Vector2(5616, 1208)
+
+[node name="Platform7" parent="." instance=ExtResource("3_qoqvr")]
+position = Vector2(6536, 1064)
+
+[node name="Platform4" parent="." instance=ExtResource("3_qoqvr")]
+position = Vector2(3784, 1048)
+
+[node name="Slug" parent="." instance=ExtResource("2_oxcol")]
+position = Vector2(1184, 1032)
+
+[node name="Slug2" parent="." instance=ExtResource("2_oxcol")]
+position = Vector2(3824, 840)
