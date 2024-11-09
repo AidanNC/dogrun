@@ -1,0 +1,111 @@
+[gd_scene load_steps=22 format=3 uid="uid://bi35spk100761"]
+
+[ext_resource type="Script" path="res://scripts/slug.gd" id="1_1eos5"]
+[ext_resource type="Texture2D" uid="uid://lobf6f4nqyir" path="res://assets/slug move/0000.png" id="1_jodr7"]
+[ext_resource type="Texture2D" uid="uid://b3gjtnty1ewhx" path="res://assets/slug move/0001.png" id="2_pqi0d"]
+[ext_resource type="Texture2D" uid="uid://cm4rfogigvsy0" path="res://assets/slug move/0002.png" id="3_rcbmb"]
+[ext_resource type="Texture2D" uid="uid://mbdmy5wh5ion" path="res://assets/slug move/0003.png" id="4_5rwfn"]
+[ext_resource type="Texture2D" uid="uid://b8rkadw3ut52s" path="res://assets/slug move/0004.png" id="5_dc7pk"]
+[ext_resource type="Texture2D" uid="uid://b5u2vh4u0mda1" path="res://assets/slug move/0005.png" id="6_i8j5b"]
+[ext_resource type="Texture2D" uid="uid://cqfo87j5gop0c" path="res://assets/slug move/0006.png" id="7_ijq8v"]
+[ext_resource type="Texture2D" uid="uid://d4iio2rb4ver1" path="res://assets/slug move/0007.png" id="8_yfk8p"]
+[ext_resource type="Texture2D" uid="uid://bu6oyl3x08wmv" path="res://assets/slug move/0008.png" id="9_1etus"]
+[ext_resource type="Texture2D" uid="uid://caw7q1uqsd806" path="res://assets/slug move/0009.png" id="10_wput8"]
+[ext_resource type="Texture2D" uid="uid://bigf0cev3p2hv" path="res://assets/slug move/0010.png" id="11_s533x"]
+[ext_resource type="Texture2D" uid="uid://bo01kg5ccw3nl" path="res://assets/slug move/0011.png" id="12_ss8ys"]
+[ext_resource type="Texture2D" uid="uid://pimb7dr8362x" path="res://assets/slug move/0012.png" id="13_nyxfb"]
+[ext_resource type="Texture2D" uid="uid://brv32vcb7rfaa" path="res://assets/slug move/0013.png" id="14_40tyl"]
+[ext_resource type="Texture2D" uid="uid://iodmvb6jl4vr" path="res://assets/slug move/0014.png" id="15_87kko"]
+[ext_resource type="Texture2D" uid="uid://djfrwl60uxffk" path="res://assets/slug move/0015.png" id="16_uj180"]
+[ext_resource type="Texture2D" uid="uid://b2kakwcevjgn3" path="res://assets/slug move/0016.png" id="17_b62t3"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hc7q5"]
+radius = 39.0
+height = 156.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kqvra"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jodr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pqi0d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_rcbmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_5rwfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_dc7pk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_i8j5b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ijq8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yfk8p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1etus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_wput8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_s533x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ss8ys")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nyxfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_40tyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_87kko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_uj180")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_b62t3")
+}],
+"loop": true,
+"name": &"move",
+"speed": 24.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fvto6"]
+radius = 46.0
+height = 188.0
+
+[node name="Slug" type="CharacterBody2D"]
+script = ExtResource("1_1eos5")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(25, 63)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_hc7q5")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.7, 0.7)
+sprite_frames = SubResource("SpriteFrames_kqvra")
+animation = &"move"
+frame_progress = 0.0905192
+
+[node name="Slug_Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slug_Hitbox"]
+position = Vector2(28, 64)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_fvto6")
+
+[connection signal="area_entered" from="Slug_Hitbox" to="." method="_on_slug_hitbox_area_entered"]
