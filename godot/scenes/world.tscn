@@ -1,43 +1,47 @@
-[gd_scene load_steps=4 format=3 uid="uid://duq34pcxha51a"]
+[gd_scene load_steps=5 format=3 uid="uid://duq34pcxha51a"]
 
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="1_4b21f"]
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="2_oxcol"]
 [ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="3_qoqvr"]
+[ext_resource type="PackedScene" uid="uid://dnx1kc7gjs78a" path="res://scenes/parallax_background.tscn" id="4_1xx7g"]
 
 [node name="World" type="Node2D"]
+position = Vector2(2256, 1136)
 
 [node name="Player" parent="." instance=ExtResource("1_4b21f")]
-position = Vector2(-1104, 928)
+position = Vector2(-1216, -656)
 
 [node name="Platform1" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(1024, 1232)
+position = Vector2(56, -352)
 
 [node name="Platform8" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(104, 1296)
+position = Vector2(-864, -288)
 
 [node name="Platform9" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(-816, 1144)
+position = Vector2(-1784, -440)
 
 [node name="Platform2" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(1944, 1384)
+position = Vector2(976, -200)
 
 [node name="Platform3" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(2864, 1224)
+position = Vector2(1896, -360)
 
 [node name="Platform5" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(4704, 1208)
+position = Vector2(3736, -376)
 
 [node name="Platform6" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(5616, 1208)
+position = Vector2(4648, -376)
 
 [node name="Platform7" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(6536, 1064)
+position = Vector2(5568, -520)
 
 [node name="Platform4" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(3784, 1048)
+position = Vector2(2816, -536)
 
 [node name="Slug" parent="." instance=ExtResource("2_oxcol")]
-position = Vector2(1184, 1032)
+position = Vector2(216, -552)
 
 [node name="Slug2" parent="." instance=ExtResource("2_oxcol")]
-position = Vector2(3824, 840)
+position = Vector2(2856, -744)
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("4_1xx7g")]
