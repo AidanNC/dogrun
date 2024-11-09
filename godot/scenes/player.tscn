@@ -26,7 +26,7 @@
 [ext_resource type="Texture2D" uid="uid://dnqpr275vhblm" path="res://assets/MC Run/0009.png" id="21_5aoq2"]
 [ext_resource type="Texture2D" uid="uid://b80qbohw1jmus" path="res://assets/MC Run/0010.png" id="22_6axp8"]
 [ext_resource type="Texture2D" uid="uid://d33eropfotvme" path="res://assets/MC Run/0011.png" id="23_tfn0e"]
-[ext_resource type="PackedScene" uid="uid://chqqrdtluwkn3" path="res://scenes/dog_bite.tscn" id="27_l3x5q"]
+[ext_resource type="PackedScene" path="res://scenes/dog_bite.tscn" id="27_l3x5q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uhu0o"]
 size = Vector2(70, 215)
