@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://b3p36e1gl3630"]
+[gd_scene load_steps=30 format=3 uid="uid://b3p36e1gl3630"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_hlxw7"]
 [ext_resource type="Texture2D" uid="uid://0n72niw45uuf" path="res://assets/MC idle/0000.png" id="2_d7uxu"]
@@ -11,6 +11,22 @@
 [ext_resource type="Texture2D" uid="uid://cu4ehy0bcv1tq" path="res://assets/MC idle/0007.png" id="9_pn6cq"]
 [ext_resource type="Texture2D" uid="uid://cnjv2xp8kanv0" path="res://assets/MC idle/0008.png" id="10_neg2l"]
 [ext_resource type="Texture2D" uid="uid://bsuv30vuf21ci" path="res://assets/MC idle/0009.png" id="11_15slc"]
+[ext_resource type="Texture2D" uid="uid://2e4k2n4d0q5q" path="res://assets/MC jump frames/0000.png" id="12_6omtw"]
+[ext_resource type="Texture2D" uid="uid://b5lm6stw5u1di" path="res://assets/MC Run/0000.png" id="12_o77wg"]
+[ext_resource type="Texture2D" uid="uid://dqo7d5hnky5v1" path="res://assets/MC Run/0001.png" id="13_wsvy5"]
+[ext_resource type="Texture2D" uid="uid://dgpojan51ej4f" path="res://assets/MC jump frames/0001.png" id="13_xwdgm"]
+[ext_resource type="Texture2D" uid="uid://muff478wglft" path="res://assets/MC jump frames/0002.png" id="14_4pqw5"]
+[ext_resource type="Texture2D" uid="uid://b1ckf13i41ns2" path="res://assets/MC Run/0002.png" id="14_j61nf"]
+[ext_resource type="Texture2D" uid="uid://cu81cr42x3mi4" path="res://assets/MC Run/0003.png" id="15_eswka"]
+[ext_resource type="Texture2D" uid="uid://d34s3d25vs752" path="res://assets/MC Run/0004.png" id="16_bxjwm"]
+[ext_resource type="Texture2D" uid="uid://cje0ymho7qw1u" path="res://assets/MC Run/0005.png" id="17_hbj4f"]
+[ext_resource type="Texture2D" uid="uid://c5yekh2kad137" path="res://assets/MC Run/0006.png" id="18_duf5u"]
+[ext_resource type="Texture2D" uid="uid://dnq061sqvvdvd" path="res://assets/MC Run/0007.png" id="19_builu"]
+[ext_resource type="Texture2D" uid="uid://dpn15cq51qvt2" path="res://assets/MC Run/0008.png" id="20_5rpw3"]
+[ext_resource type="Texture2D" uid="uid://dnqpr275vhblm" path="res://assets/MC Run/0009.png" id="21_5aoq2"]
+[ext_resource type="Texture2D" uid="uid://b80qbohw1jmus" path="res://assets/MC Run/0010.png" id="22_6axp8"]
+[ext_resource type="Texture2D" uid="uid://d33eropfotvme" path="res://assets/MC Run/0011.png" id="23_tfn0e"]
+[ext_resource type="PackedScene" uid="uid://chqqrdtluwkn3" path="res://scenes/dog_bite.tscn" id="27_l3x5q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uhu0o"]
 size = Vector2(70, 215)
@@ -51,6 +67,71 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 24.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14_4pqw5")
+}],
+"loop": true,
+"name": &"jump_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_xwdgm")
+}],
+"loop": true,
+"name": &"jump_top",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_6omtw")
+}],
+"loop": true,
+"name": &"jump_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_o77wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_wsvy5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_j61nf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_eswka")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_bxjwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_hbj4f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_duf5u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_builu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_5rpw3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_5aoq2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6axp8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_tfn0e")
+}],
+"loop": true,
+"name": &"run",
+"speed": 24.0
 }]
 
 [node name="Player" type="CharacterBody2D"]
@@ -66,7 +147,10 @@ position = Vector2(2, -91)
 zoom = Vector2(1.5, 1.5)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-10, 1)
 scale = Vector2(0.5, 0.503)
 sprite_frames = SubResource("SpriteFrames_bkqdi")
-animation = &"idle"
-frame_progress = 0.750896
+animation = &"jump_down"
+
+[node name="DogBite" parent="." instance=ExtResource("27_l3x5q")]
+position = Vector2(-7, -10)
