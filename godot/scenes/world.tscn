@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://duq34pcxha51a"]
+[gd_scene load_steps=5 format=3 uid="uid://duq34pcxha51a"]
 
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="1_4b21f"]
+[ext_resource type="PackedScene" uid="uid://dmbu8uqqe5qyx" path="res://scenes/slime.tscn" id="2_oxcol"]
 
 [sub_resource type="QuadMesh" id="QuadMesh_54h7s"]
 size = Vector2(1000, 100)
@@ -56,3 +57,6 @@ mesh = SubResource("QuadMesh_54h7s")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4"]
 position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_ofi40")
+
+[node name="Slime" parent="." instance=ExtResource("2_oxcol")]
+position = Vector2(1390, 474)
