@@ -18,6 +18,7 @@ func _physics_process(delta):
 			velocity.y = max_gravity
 	if Input.is_action_just_pressed("jump"):
 		velocity.y = -jump_force
+	
 		
 	
 	var horizontal_direction = Input.get_axis("move_left","move_right")

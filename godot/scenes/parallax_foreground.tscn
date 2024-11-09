@@ -7,7 +7,7 @@
 
 [node name="ParallaxForeground" type="ParallaxBackground"]
 layer = 10
-scroll_base_offset = Vector2(0, 460)
+scroll_base_offset = Vector2(0, 950)
 
 [node name="FGelement1" type="ParallaxLayer" parent="."]
 z_index = 10
