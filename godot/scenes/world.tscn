@@ -25,7 +25,7 @@ position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_ofi40")
 
 [node name="Platform2" type="StaticBody2D" parent="."]
-position = Vector2(1710, 530)
+position = Vector2(1706, 593)
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Platform2"]
 modulate = Color(0.27, 1, 0.756667, 1)
@@ -36,7 +36,7 @@ position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_ofi40")
 
 [node name="Platform3" type="StaticBody2D" parent="."]
-position = Vector2(552, 311)
+position = Vector2(499, 477)
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Platform3"]
 modulate = Color(0.27, 1, 0.756667, 1)
@@ -47,7 +47,7 @@ position = Vector2(-0.5, 0.5)
 shape = SubResource("RectangleShape2D_ofi40")
 
 [node name="Platform4" type="StaticBody2D" parent="."]
-position = Vector2(1879, 77)
+position = Vector2(1788, 241)
 
 [node name="MeshInstance2D" type="MeshInstance2D" parent="Platform4"]
 modulate = Color(0.27, 1, 0.756667, 1)

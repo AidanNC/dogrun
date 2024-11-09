@@ -4,6 +4,8 @@ extends CharacterBody2D
 @export var gravity = 20
 @export var jump_force = 1200
 
+var facingLeft = true
+
 func _physics_process(delta):
 	
 	if !is_on_floor():
@@ -18,3 +20,10 @@ func _physics_process(delta):
 	velocity.x = speed * horizontal_direction
 	
 	move_and_slide()
+	
+	facingLeft = velocity.x < 0 || velocity.x == 0 && facingLeft
+	
+	print(facingLeft)
+	
+	$AnimatedSprite2D.flip_h = facingLeft
+	$AnimatedSprite2D.play()
