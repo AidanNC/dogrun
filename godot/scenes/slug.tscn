@@ -84,9 +84,10 @@ animations = [{
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fvto6"]
 radius = 46.0
-height = 188.0
+height = 208.0
 
 [node name="Slug" type="CharacterBody2D"]
+collision_mask = 2
 script = ExtResource("1_1eos5")
 metadata/_edit_group_ = true
 

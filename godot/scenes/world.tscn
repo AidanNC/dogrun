@@ -24,10 +24,10 @@ position = Vector2(-1774, -286)
 remote_path = NodePath("../../Camera2D")
 
 [node name="Platform1" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(-724, 149)
+position = Vector2(-1023, 270)
 
 [node name="Platform2" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(516, 363)
+position = Vector2(1292, 267)
 
 [node name="Platform3" parent="." instance=ExtResource("3_qoqvr")]
 position = Vector2(-759, -363)
@@ -36,7 +36,7 @@ position = Vector2(-759, -363)
 position = Vector2(154, -756)
 
 [node name="Platform8" parent="." instance=ExtResource("3_qoqvr")]
-position = Vector2(-1931, -21)
+position = Vector2(-2341, -7)
 
 [node name="Platform6" parent="." instance=ExtResource("3_qoqvr")]
 position = Vector2(4123, 335)
@@ -72,7 +72,7 @@ position = Vector2(3272, 400)
 position = Vector2(807, -967)
 
 [node name="Slug2" parent="." instance=ExtResource("2_oxcol")]
-position = Vector2(2308, -372)
+position = Vector2(121, 7)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("4_1xx7g")]
 

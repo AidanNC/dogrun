@@ -135,6 +135,7 @@ animations = [{
 }]
 
 [node name="Player" type="CharacterBody2D"]
+collision_mask = 2
 script = ExtResource("1_hlxw7")
 jump_force = 900
 metadata/_edit_group_ = true
