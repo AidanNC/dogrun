@@ -91,7 +91,7 @@ func setHitStun():
 	
 	
 func _on_area_2d_area_entered(area: Area2D) -> void:
-	if area.name == "Slug_Hitbox":
+	if area.name == "Slug_Hitbox" || area.name == "Spear_Hitbox":
 		setHitStun()
 		var tween = get_tree().create_tween()
 		tween.tween_property($AnimatedSprite2D, "modulate", Color.RED, 0.1)

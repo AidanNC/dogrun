@@ -156,7 +156,7 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ucnfr")
 animation = &"throw"
-frame_progress = 0.0442701
+frame_progress = 0.597342
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4.5, 76)
@@ -169,3 +169,4 @@ position = Vector2(-4.5, 76)
 shape = SubResource("RectangleShape2D_ldyt2")
 
 [connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
+[connection signal="area_entered" from="Lizard_Hitbox" to="." method="_on_lizard_hitbox_area_entered"]

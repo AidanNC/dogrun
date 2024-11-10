@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwq8tb6l4f70f"]
+[gd_scene load_steps=5 format=3 uid="uid://bwq8tb6l4f70f"]
 
 [ext_resource type="Script" path="res://scripts/spear.gd" id="1_fqxu3"]
 [ext_resource type="Texture2D" uid="uid://d1o8v6cukxh4g" path="res://assets/lizard spear thrower colored/0033.png" id="2_hq8jb"]
@@ -7,8 +7,10 @@
 a = Vector2(0, -2)
 b = Vector2(-3, 333)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r002l"]
+size = Vector2(57, 67)
+
 [node name="Spear" type="CharacterBody2D"]
-visible = false
 collision_mask = 2
 script = ExtResource("1_fqxu3")
 metadata/_edit_group_ = true
@@ -17,6 +19,12 @@ metadata/_edit_group_ = true
 shape = SubResource("SegmentShape2D_bppse")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-58, 231)
+position = Vector2(4, 180)
 rotation = 1.5708
 texture = ExtResource("2_hq8jb")
+
+[node name="Spear_Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Spear_Hitbox"]
+position = Vector2(1, 47)
+shape = SubResource("RectangleShape2D_r002l")

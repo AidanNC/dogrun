@@ -20,11 +20,9 @@ func _physics_process(_delta):
 	$AnimatedSprite2D.flip_h = !lookLeft
 	$AnimatedSprite2D.play()
 
-var count = 0
 	
 func throwSpear():
-	print("spear thrown!")
-	count += 1
+	
 	
 	#calculate the angle and corresponding velocities for throwing
 	#this didn't make any sense coding it, so idk I will need to redo this at some point
@@ -53,3 +51,12 @@ func throwSpear():
 func _on_animated_sprite_2d_frame_changed() -> void:
 	if $AnimatedSprite2D.frame == 15:
 		throwSpear()
+		
+
+
+func _on_lizard_hitbox_area_entered(area: Area2D) -> void:
+	if area.name == "DogBite":
+		hide()
+		$CollisionShape2D.set_deferred("disabled",true)
+		$Lizard_Hitbox.set_deferred("disabled",true)
+		queue_free()
