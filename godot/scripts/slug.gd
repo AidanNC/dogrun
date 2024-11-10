@@ -11,7 +11,7 @@ func _physics_process(delta):
 	
 	if !is_on_floor():
 		velocity.y += gravity
-		if velocity.y == 1000:
+		if velocity.y >= 1000:
 			velocity.y = 1000
 	if is_on_wall():
 		movingLeft = !movingLeft 

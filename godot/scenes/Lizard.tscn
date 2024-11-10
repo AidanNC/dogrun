@@ -1,0 +1,175 @@
+[gd_scene load_steps=39 format=3 uid="uid://5h74q73j5bif"]
+
+[ext_resource type="Texture2D" uid="uid://dd2teo4ad5i8y" path="res://assets/lizard spear thrower/0000.png" id="1_1jrbt"]
+[ext_resource type="Script" path="res://scripts/lizard.gd" id="1_6dciv"]
+[ext_resource type="Texture2D" uid="uid://c80yjcho5o3vh" path="res://assets/lizard spear thrower/0001.png" id="2_1h7y0"]
+[ext_resource type="PackedScene" uid="uid://bwq8tb6l4f70f" path="res://scenes/spear.tscn" id="2_7hdwp"]
+[ext_resource type="Texture2D" uid="uid://bk1y75smh2r24" path="res://assets/lizard spear thrower/0002.png" id="3_j5hxg"]
+[ext_resource type="Texture2D" uid="uid://b35nbf31mwwbl" path="res://assets/lizard spear thrower/0003.png" id="4_0chv4"]
+[ext_resource type="Texture2D" uid="uid://bsw4cqf55gj7b" path="res://assets/lizard spear thrower/0004.png" id="5_vriws"]
+[ext_resource type="Texture2D" uid="uid://1rr1bmsp734o" path="res://assets/lizard spear thrower/0005.png" id="6_8jn7h"]
+[ext_resource type="Texture2D" uid="uid://b8rsqw03g06ee" path="res://assets/lizard spear thrower/0006.png" id="7_jnftf"]
+[ext_resource type="Texture2D" uid="uid://b2jna3hsvy4wv" path="res://assets/lizard spear thrower/0007.png" id="8_6ayyc"]
+[ext_resource type="Texture2D" uid="uid://cnc14fxymli4p" path="res://assets/lizard spear thrower/0008.png" id="9_dyt0t"]
+[ext_resource type="Texture2D" uid="uid://ctwku26u2vm6m" path="res://assets/lizard spear thrower/0009.png" id="10_lhq6v"]
+[ext_resource type="Texture2D" uid="uid://bw07l681ftfck" path="res://assets/lizard spear thrower/0010.png" id="11_xy374"]
+[ext_resource type="Texture2D" uid="uid://dbr8yk54w4k3p" path="res://assets/lizard spear thrower/0011.png" id="12_gf7qt"]
+[ext_resource type="Texture2D" uid="uid://d2pbfqn2lahw0" path="res://assets/lizard spear thrower/0012.png" id="13_oltkq"]
+[ext_resource type="Texture2D" uid="uid://cfpl6f37h0boh" path="res://assets/lizard spear thrower/0013.png" id="14_kggvt"]
+[ext_resource type="Texture2D" uid="uid://b15ty4oiqxjn0" path="res://assets/lizard spear thrower/0014.png" id="15_1eff8"]
+[ext_resource type="Texture2D" uid="uid://cjrkjp1qjvkvt" path="res://assets/lizard spear thrower/0015.png" id="16_km55t"]
+[ext_resource type="Texture2D" uid="uid://fu7u7jcrvlu" path="res://assets/lizard spear thrower/0016.png" id="17_3pxyc"]
+[ext_resource type="Texture2D" uid="uid://bb4n6wt0ou8jf" path="res://assets/lizard spear thrower/0017.png" id="18_a2i2l"]
+[ext_resource type="Texture2D" uid="uid://bb0kjj7pvyfbr" path="res://assets/lizard spear thrower/0018.png" id="19_qpbf4"]
+[ext_resource type="Texture2D" uid="uid://bt3dajdtehclo" path="res://assets/lizard spear thrower/0019.png" id="20_s6koy"]
+[ext_resource type="Texture2D" uid="uid://dd3ruw34pkd5d" path="res://assets/lizard spear thrower/0020.png" id="21_13ubi"]
+[ext_resource type="Texture2D" uid="uid://e1g7ddawodxy" path="res://assets/lizard spear thrower/0021.png" id="22_cf36k"]
+[ext_resource type="Texture2D" uid="uid://bleopj82jvspl" path="res://assets/lizard spear thrower/0022.png" id="23_nkhd5"]
+[ext_resource type="Texture2D" uid="uid://cppjtwslphrqm" path="res://assets/lizard spear thrower/0023.png" id="24_4ul20"]
+[ext_resource type="Texture2D" uid="uid://bpmyhvu7tlmgw" path="res://assets/lizard spear thrower/0024.png" id="25_ybosi"]
+[ext_resource type="Texture2D" uid="uid://dod1ohjoiaccg" path="res://assets/lizard spear thrower/0025.png" id="26_aonnb"]
+[ext_resource type="Texture2D" uid="uid://ct05f1gstbdb4" path="res://assets/lizard spear thrower/0026.png" id="27_clh7t"]
+[ext_resource type="Texture2D" uid="uid://bnk0pbatedjyy" path="res://assets/lizard spear thrower/0027.png" id="28_g28fq"]
+[ext_resource type="Texture2D" uid="uid://7npqvp8g8rp3" path="res://assets/lizard spear thrower/0028.png" id="29_yahnv"]
+[ext_resource type="Texture2D" uid="uid://conshmufm728e" path="res://assets/lizard spear thrower/0029.png" id="30_7wpqo"]
+[ext_resource type="Texture2D" uid="uid://dtsdf10qc0nyv" path="res://assets/lizard spear thrower/0030.png" id="31_7nsj6"]
+[ext_resource type="Texture2D" uid="uid://d28qc7v3fess7" path="res://assets/lizard spear thrower/0031.png" id="32_r6kp1"]
+[ext_resource type="Texture2D" uid="uid://bo5nroaxpw84l" path="res://assets/lizard spear thrower/0032.png" id="33_em7re"]
+[ext_resource type="Texture2D" uid="uid://dho2xcm6hupre" path="res://assets/lizard spear thrower/0033.png" id="34_0j63a"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ucnfr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_1jrbt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1h7y0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_j5hxg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0chv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_vriws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8jn7h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_jnftf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_6ayyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_dyt0t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_lhq6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_xy374")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_gf7qt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_oltkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_kggvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_1eff8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_km55t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3pxyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_a2i2l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qpbf4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_s6koy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_13ubi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_cf36k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nkhd5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_4ul20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ybosi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_aonnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_clh7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_g28fq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_yahnv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_7wpqo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_7nsj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_r6kp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_em7re")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_0j63a")
+}],
+"loop": true,
+"name": &"throw",
+"speed": 24.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ldyt2"]
+size = Vector2(113, 300)
+
+[node name="lizard" type="CharacterBody2D"]
+collision_mask = 2
+script = ExtResource("1_6dciv")
+spear_scene = ExtResource("2_7hdwp")
+throw_power = 2000
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_ucnfr")
+animation = &"throw"
+frame_progress = 0.311661
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-4.5, 76)
+shape = SubResource("RectangleShape2D_ldyt2")
+
+[node name="Lizard_Hitbox" type="Area2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Lizard_Hitbox"]
+position = Vector2(-4.5, 76)
+shape = SubResource("RectangleShape2D_ldyt2")
+
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]

@@ -134,7 +134,7 @@ animations = [{
 "speed": 24.0
 }]
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["player"]]
 collision_mask = 2
 script = ExtResource("1_hlxw7")
 jump_force = 900
