@@ -156,7 +156,7 @@ metadata/_edit_group_ = true
 position = Vector2(-10, 4)
 scale = Vector2(0.5, 0.503)
 sprite_frames = SubResource("SpriteFrames_bkqdi")
-animation = &"run"
+animation = &"jump_up"
 
 [node name="DogBite" parent="." instance=ExtResource("27_l3x5q")]
 position = Vector2(24, 4)

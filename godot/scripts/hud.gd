@@ -29,11 +29,12 @@ func _process(delta: float) -> void:
 				removeHeart(children[i])
 
 func removeHeart(heart):
-	if !heart:
-		return
+	
 	heart.animation = "die"
 	heart.play()
 	await get_tree().create_timer(0.7).timeout
+	if !heart:
+		return
 	heart.hide()
 	heart.queue_free()
 			

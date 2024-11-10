@@ -10,16 +10,23 @@ var health = 5
 
 var facingLeft = true
 var inHitstun = false
+var hasDoubleJump = true
 
 
 func _physics_process(delta):
 	
-	
 	if !is_on_floor():
 		velocity.y += gravity
 		
-		if velocity.y == max_gravity:
-			velocity.y = max_gravity
+		velocity.y = min(velocity.y, max_gravity)
+			
+	else:
+		hasDoubleJump = true
+	if is_on_wall():
+		velocity.y =min(velocity.y, max_gravity/2)
+		hasDoubleJump = true
+			
+		
 	
 	
 	handleMovement()
@@ -65,8 +72,15 @@ func handleMovement():
 	if inHitstun:
 		return
 	if Input.is_action_just_pressed("jump"):
-		velocity.y = -jump_force
-		$Jump.play()
+		if is_on_floor() || is_on_wall():
+			velocity.y = -jump_force
+			hasDoubleJump = true
+			$Jump.play()
+		elif hasDoubleJump:
+			velocity.y = -jump_force
+			hasDoubleJump = false
+			$Jump.play()
+		
 	var horizontal_direction = Input.get_axis("move_left","move_right")
 	velocity.x = speed * horizontal_direction 
 	
@@ -112,8 +126,14 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		velocity.y = -1000
 		velocity.x = -1000 if facingLeft else 1000
 		$AnimatedSprite2D.animation = "jump_up"
-		
-			
-		
 		health -= 1
 		print(health)
+	elif area.name == "Food":
+		if area.get_node("type").animation == "soda":
+			print("soda")
+			speed += 100
+		elif area.get_node("type").animation == "sushi":
+			print("sushi")	
+		elif area.get_node("type").animation == "pizza":
+			print("pizza")
+	
