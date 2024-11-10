@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://be1kj04oplmyn"]
+
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_wwrh8"]
+[ext_resource type="PackedScene" uid="uid://d4b0k5tk7w7fw" path="res://scenes/heart.tscn" id="2_xn4kq"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_wwrh8")
+heart_scene = ExtResource("2_xn4kq")
