@@ -58,6 +58,8 @@ func playerAnimation():
 	#var dogBiteAnimatedSprite = $DogBite.get_node("AnimatedSprite2D")
 	#dogBiteAnimatedSprite.flip_h = facingLeft
 	$DogBite.scale.x = -1 if facingLeft else 1
+	print($DogBite.position)
+	$DogBite.position.x = -38 if facingLeft else 33
 	
 	
 	

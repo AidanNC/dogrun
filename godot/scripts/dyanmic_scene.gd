@@ -16,6 +16,5 @@ func _ready() -> void:
 		var loc = Vector2(width*i, 1900)
 		plat.position = loc
 		add_child(plat)
-		print(loc)
 	
 	
