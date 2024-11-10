@@ -6,11 +6,13 @@
 size = Vector2(1032, 424)
 
 [node name="lower_platform" type="StaticBody2D"]
+position = Vector2(-24, 32)
 metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(12, 276)
+position = Vector2(24, 192)
 shape = SubResource("RectangleShape2D_veui5")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="CollisionShape2D2" type="Sprite2D" parent="."]
+position = Vector2(0, -80)
 texture = ExtResource("1_00q7e")

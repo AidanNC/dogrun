@@ -4,11 +4,18 @@ extends Node2D
 
 
 func _ready() -> void:
-	var loc = get_node("Player").position
 	
-	var plat1 = platform_scene.instantiate()
-	loc[1] += 500
-	plat1.position = loc
-	add_child(plat1)
-	print(loc)
+	#var loc = get_node("Player").position
+	#print(loc)
+	for i in range(20):
+		
+		var plat = platform_scene.instantiate()
+		var collision_shape = plat.get_node("CollisionShape2D")
+		var shape = collision_shape.shape
+		var width = shape.extents.x * 2
+		var loc = Vector2(width*i, 1900)
+		plat.position = loc
+		add_child(plat)
+		print(loc)
+	
 	

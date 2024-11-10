@@ -1,15 +1,18 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1sqnfdg5x1e7"]
+[gd_scene load_steps=6 format=3 uid="uid://c1sqnfdg5x1e7"]
 
 [ext_resource type="Script" path="res://scripts/dyanmic_scene.gd" id="1_fml26"]
-[ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="2_snjit"]
+[ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="2_3wmxw"]
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="3_bmp6i"]
 [ext_resource type="PackedScene" uid="uid://dnx1kc7gjs78a" path="res://scenes/parallax_background.tscn" id="4_n3f4s"]
+[ext_resource type="PackedScene" uid="uid://u3gdb72ahf7p" path="res://scenes/parallax_foreground.tscn" id="5_qgwtg"]
 
 [node name="DyanmicScene" type="Node2D"]
 script = ExtResource("1_fml26")
-platform_scene = ExtResource("2_snjit")
+platform_scene = ExtResource("2_3wmxw")
 
 [node name="Player" parent="." instance=ExtResource("3_bmp6i")]
-position = Vector2(584, 432)
+position = Vector2(224, 1625)
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("4_n3f4s")]
+
+[node name="ParallaxForeground" parent="." instance=ExtResource("5_qgwtg")]

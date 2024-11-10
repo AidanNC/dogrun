@@ -144,8 +144,9 @@ position = Vector2(-3, 3.5)
 shape = SubResource("RectangleShape2D_uhu0o")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(2, -91)
-enabled = false
+limit_top = -200
+limit_bottom = 2000
+editor_draw_limits = true
 metadata/_edit_group_ = true
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
