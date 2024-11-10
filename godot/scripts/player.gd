@@ -101,9 +101,6 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		
 		#figure out which direction you got hit from
 		var loc1 = area.global_position
-		print("loc1:")
-		print(loc1)
-		print(global_position)
 		if loc1.x >= global_position.x: #you were hit from the right
 			facingLeft = true #face the direction you were hit
 		else:

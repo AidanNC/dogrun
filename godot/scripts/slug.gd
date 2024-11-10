@@ -37,4 +37,6 @@ func _on_slug_hitbox_area_entered(area: Area2D) -> void:
 	if area.name == "DogBite":
 		hide()
 		$CollisionShape2D.set_deferred("disabled",true)
+		$Slug_Hitbox.set_deferred("disabled",true)
+		queue_free()
 	
