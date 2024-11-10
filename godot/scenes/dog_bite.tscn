@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://epl84qsgrxb0"]
+[gd_scene load_steps=19 format=3 uid="uid://epl84qsgrxb0"]
 
 [ext_resource type="Script" path="res://scripts/dog_bite.gd" id="1_gvo48"]
 [ext_resource type="Texture2D" uid="uid://b7r2r8e36engm" path="res://assets/dog bite colored/0000.png" id="2_hxx0y"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cpk6vfra72gw2" path="res://assets/dog bite colored/0010.png" id="12_ompxo"]
 [ext_resource type="Texture2D" uid="uid://svo1isnwhm1o" path="res://assets/dog bite colored/0011.png" id="13_sqa20"]
 [ext_resource type="Texture2D" uid="uid://io0mksfwswkq" path="res://assets/dog bite colored/0012.png" id="14_ms7s8"]
+[ext_resource type="AudioStream" uid="uid://c6hflv0ulrurm" path="res://assets/bite.mp3" id="15_6xlyt"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_clc22"]
 animations = [{
@@ -89,5 +90,8 @@ disabled = true
 position = Vector2(26, 0)
 shape = SubResource("CircleShape2D_wqvwv")
 disabled = true
+
+[node name="BiteSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_6xlyt")
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]

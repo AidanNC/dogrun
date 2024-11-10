@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://b3p36e1gl3630"]
+[gd_scene load_steps=32 format=3 uid="uid://b3p36e1gl3630"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_hlxw7"]
 [ext_resource type="Texture2D" uid="uid://dth2v74nse4fs" path="res://assets/MC idle colored/0000.png" id="2_qvfor"]
@@ -27,6 +27,8 @@
 [ext_resource type="Texture2D" uid="uid://ciyy012n0dr0u" path="res://assets/MC Run colored v2/0010.png" id="25_7xqpr"]
 [ext_resource type="Texture2D" uid="uid://brtt1agr247xe" path="res://assets/MC Run colored v2/0011.png" id="26_26i1o"]
 [ext_resource type="PackedScene" uid="uid://epl84qsgrxb0" path="res://scenes/dog_bite.tscn" id="27_l3x5q"]
+[ext_resource type="AudioStream" uid="uid://btu7hv8htn68x" path="res://assets/jump.wav" id="28_wqk5r"]
+[ext_resource type="AudioStream" uid="uid://bqela0o1h2wnw" path="res://assets/ouch.wav" id="29_cid8p"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uhu0o"]
 size = Vector2(70, 215)
@@ -164,5 +166,12 @@ position = Vector2(24, 4)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-3, 3.5)
 shape = SubResource("RectangleShape2D_uhu0o")
+
+[node name="Jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("28_wqk5r")
+volume_db = 2.0
+
+[node name="Hit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("29_cid8p")
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

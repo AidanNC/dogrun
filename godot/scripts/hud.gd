@@ -9,7 +9,8 @@ func _ready() -> void:
 	health = Player.health
 	for i in range(Player.health):
 		var heart = heart_scene.instantiate()
-		heart.frame = i*2 % 16
+		heart.frame = i*2 
+		heart.play()
 		var loc = Vector2(125 * i + 60, 65)
 		heart.position = loc
 		add_child(heart)
@@ -21,7 +22,19 @@ func _process(delta: float) -> void:
 		var children = get_children()
 		for i in range(len(children)-1, -1, -1):
 			if i >= health:
-				children[i].hide()
-				children[i].queue_free()
+				#children[i].animation = "die"
+				#children[i].play()
+				#children[i].hide()
+				#children[i].queue_free()
+				removeHeart(children[i])
+
+func removeHeart(heart):
+	if !heart:
+		return
+	heart.animation = "die"
+	heart.play()
+	await get_tree().create_timer(0.7).timeout
+	heart.hide()
+	heart.queue_free()
 			
 	

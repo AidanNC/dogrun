@@ -66,6 +66,7 @@ func handleMovement():
 		return
 	if Input.is_action_just_pressed("jump"):
 		velocity.y = -jump_force
+		$Jump.play()
 	var horizontal_direction = Input.get_axis("move_left","move_right")
 	velocity.x = speed * horizontal_direction 
 	
@@ -95,6 +96,7 @@ func setHitStun():
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.name == "Slug_Hitbox" || area.name == "Spear_Hitbox":
 		setHitStun()
+		$Hit.play()
 		var tween = get_tree().create_tween()
 		tween.tween_property($AnimatedSprite2D, "modulate", Color.RED, 0.1)
 		tween.tween_property($AnimatedSprite2D, "modulate", Color.WHITE, 0.1)

@@ -6,9 +6,15 @@ extends CharacterBody2D
 @export var throw_power: int
 
 var lookLeft = true
+var dead = false
 
+func _ready():
+	var rng = RandomNumberGenerator.new()
+	$AnimatedSprite2D.frame = rng.randf_range(0, 32)
 
 func _physics_process(_delta):
+	if dead:
+		return
 	if !is_on_floor():
 		velocity.y += 20
 		if velocity.y >= 1000:
@@ -51,12 +57,23 @@ func throwSpear():
 func _on_animated_sprite_2d_frame_changed() -> void:
 	if $AnimatedSprite2D.frame == 15:
 		throwSpear()
+		$Throw.play()
 		
 
 
 func _on_lizard_hitbox_area_entered(area: Area2D) -> void:
 	if area.name == "DogBite":
-		hide()
+		
+		dead = true
 		$CollisionShape2D.set_deferred("disabled",true)
+		$CollisionShape2D.hide()
 		$Lizard_Hitbox.set_deferred("disabled",true)
-		queue_free()
+		$Lizard_Hitbox.hide()
+		
+		$AnimatedSprite2D.animation = "die"
+		$AnimatedSprite2D.play()
+		$Die.play()
+
+
+func _on_animated_sprite_2d_animation_finished() -> void:
+	queue_free()

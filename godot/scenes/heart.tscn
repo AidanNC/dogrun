@@ -1,23 +1,88 @@
-[gd_scene load_steps=17 format=3 uid="uid://d4b0k5tk7w7fw"]
+[gd_scene load_steps=32 format=3 uid="uid://d4b0k5tk7w7fw"]
 
 [ext_resource type="Texture2D" uid="uid://bwmgcje6qcps8" path="res://assets/heart icons/0000.png" id="1_1fhin"]
+[ext_resource type="Texture2D" uid="uid://dx7bhehviuiqj" path="res://explosion/0000.png" id="1_ay5bo"]
 [ext_resource type="Texture2D" uid="uid://caenxdgexnqcd" path="res://assets/heart icons/0001.png" id="2_h5o78"]
+[ext_resource type="Texture2D" uid="uid://b5ebxl2fitjgv" path="res://explosion/0001.png" id="2_jenkw"]
 [ext_resource type="Texture2D" uid="uid://hlhsu7mjbp8b" path="res://assets/heart icons/0002.png" id="3_j2e0v"]
+[ext_resource type="Texture2D" uid="uid://7apqkwfd7wk2" path="res://explosion/0002.png" id="3_ppw26"]
 [ext_resource type="Texture2D" uid="uid://e8hcjg6s1iar" path="res://assets/heart icons/0003.png" id="4_4ey5o"]
+[ext_resource type="Texture2D" uid="uid://m4nch3tyn0vq" path="res://explosion/0003.png" id="4_vnd41"]
+[ext_resource type="Texture2D" uid="uid://2xvngixosni5" path="res://explosion/0004.png" id="5_0agnt"]
 [ext_resource type="Texture2D" uid="uid://h3uv7rjeljdi" path="res://assets/heart icons/0004.png" id="5_ch5ma"]
+[ext_resource type="Texture2D" uid="uid://cbejcwu4ctwba" path="res://explosion/0005.png" id="6_h03kj"]
 [ext_resource type="Texture2D" uid="uid://bhcfh34dkm5hr" path="res://assets/heart icons/0005.png" id="6_upe6f"]
 [ext_resource type="Texture2D" uid="uid://c06i1vomxvio7" path="res://assets/heart icons/0006.png" id="7_830we"]
+[ext_resource type="Texture2D" uid="uid://cddcl346fdd4p" path="res://explosion/0006.png" id="7_wlrbf"]
+[ext_resource type="Texture2D" uid="uid://c1g0q7ti6vqwd" path="res://explosion/0007.png" id="8_2n3pg"]
 [ext_resource type="Texture2D" uid="uid://wbsv5gr63g7e" path="res://assets/heart icons/0007.png" id="8_g3ebo"]
 [ext_resource type="Texture2D" uid="uid://bhbarqvb4n3xh" path="res://assets/heart icons/0008.png" id="9_qocje"]
+[ext_resource type="Texture2D" uid="uid://cu2rnfcip1ors" path="res://explosion/0008.png" id="9_xwlmb"]
+[ext_resource type="Texture2D" uid="uid://cgt57f5ex7hs3" path="res://explosion/0009.png" id="10_bfeud"]
 [ext_resource type="Texture2D" uid="uid://cvsloofhwlt7x" path="res://assets/heart icons/0009.png" id="10_c5cja"]
 [ext_resource type="Texture2D" uid="uid://wgu4sl5s4tsr" path="res://assets/heart icons/0010.png" id="11_m78h2"]
+[ext_resource type="Texture2D" uid="uid://dma1a4lh8tult" path="res://explosion/0010.png" id="11_rp26n"]
 [ext_resource type="Texture2D" uid="uid://bas3wk81ku0qx" path="res://assets/heart icons/0011.png" id="12_61aqt"]
+[ext_resource type="Texture2D" uid="uid://bvjh2xe4ufsme" path="res://explosion/0011.png" id="12_k6kwm"]
 [ext_resource type="Texture2D" uid="uid://cgiy2pwl6wlvi" path="res://assets/heart icons/0012.png" id="13_wn0jx"]
+[ext_resource type="Texture2D" uid="uid://c5hnnm2i6cw1w" path="res://explosion/0012.png" id="13_xae4j"]
 [ext_resource type="Texture2D" uid="uid://cxj3716quitxl" path="res://assets/heart icons/0013.png" id="14_806a1"]
+[ext_resource type="Texture2D" uid="uid://cltp0jcdj45hq" path="res://explosion/0013.png" id="14_i3o7o"]
 [ext_resource type="Texture2D" uid="uid://d1av5ik4mjx4" path="res://assets/heart icons/0014.png" id="15_c5jkp"]
+[ext_resource type="Texture2D" uid="uid://j8owbh0s166l" path="res://explosion/0014.png" id="15_v3k85"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_j6gpx"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ay5bo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jenkw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ppw26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vnd41")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0agnt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_h03kj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_wlrbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_2n3pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_xwlmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_bfeud")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_rp26n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_k6kwm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_xae4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_i3o7o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_v3k85")
+}],
+"loop": false,
+"name": &"die",
+"speed": 24.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_1fhin")
@@ -70,7 +135,7 @@ animations = [{
 }]
 
 [node name="Heart" type="AnimatedSprite2D"]
+position = Vector2(15, 1)
 scale = Vector2(0.4, 0.4)
 sprite_frames = SubResource("SpriteFrames_j6gpx")
 animation = &"float"
-autoplay = "float"
