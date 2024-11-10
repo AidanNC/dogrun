@@ -8,7 +8,6 @@ func _process(_delta):
 	if Input.is_action_just_pressed("attack"):
 		$AnimatedSprite2D.play()
 		changeBite(false)
-	print(position)
 	
 	
 func changeBite(status: bool):

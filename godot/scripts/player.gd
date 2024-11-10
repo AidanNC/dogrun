@@ -57,9 +57,22 @@ func playerAnimation():
 	$AnimatedSprite2D.flip_h = facingLeft
 	#var dogBiteAnimatedSprite = $DogBite.get_node("AnimatedSprite2D")
 	#dogBiteAnimatedSprite.flip_h = facingLeft
+	positionDogBite()
+	
+func positionDogBite():
+	
 	$DogBite.scale.x = -1 if facingLeft else 1
-	print($DogBite.position)
-	$DogBite.position.x = -38 if facingLeft else 33
+	
+	#determine if we are in the upward jump
+	if $AnimatedSprite2D.animation == "jump_up":
+		$DogBite.position.x = -10 if facingLeft else 0
+		$DogBite.position.y = 14
+	elif $AnimatedSprite2D.animation == "run":
+		$DogBite.position.x = -56 if facingLeft else 33
+		$DogBite.position.y = 6
+	else:
+		$DogBite.position.x = -38 if facingLeft else 23
+		$DogBite.position.y = 10
 	
 	
 	
