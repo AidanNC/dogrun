@@ -27,30 +27,17 @@ func throwSpear():
 	count += 1
 	
 	#calculate the angle and corresponding velocities for throwing
+	#this didn't make any sense coding it, so idk I will need to redo this at some point
 	var distance = abs(Player.global_position.x - global_position.x)
 	
 	var g = 20 # should be consistent with spear gravity
 	var inner = distance * g /(throw_power * throw_power)
 	var theta = 0.5 * asin(inner)
-	#var v = (distance * g/sin(2*PI/6)) ** 0.5
-	theta = PI/4
-	var v = 800
-	print(sin(theta))
-	var y_velo = sin(theta) * v
-	var x_velo = cos(theta) * v
 	
-	if count < 100:
-		print("***")
-		print("distance")
-		print(distance)
-		#print("inner")
-		#print(inner)
-		#print("theta")
-		#print(theta)
-		#print("velos")
-		#print(y_velo)
-		#print(x_velo)
-		
+	var v = 1.1
+	var y_velo = sin(theta) * distance * v
+	var x_velo = cos(theta) * distance * v
+	#end section that neeeds to be redone
 	
 	var spear = spear_scene.instantiate()
 	

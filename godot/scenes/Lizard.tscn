@@ -1,146 +1,142 @@
-[gd_scene load_steps=39 format=3 uid="uid://5h74q73j5bif"]
+[gd_scene load_steps=38 format=3 uid="uid://5h74q73j5bif"]
 
-[ext_resource type="Texture2D" uid="uid://dd2teo4ad5i8y" path="res://assets/lizard spear thrower/0000.png" id="1_1jrbt"]
 [ext_resource type="Script" path="res://scripts/lizard.gd" id="1_6dciv"]
-[ext_resource type="Texture2D" uid="uid://c80yjcho5o3vh" path="res://assets/lizard spear thrower/0001.png" id="2_1h7y0"]
 [ext_resource type="PackedScene" uid="uid://bwq8tb6l4f70f" path="res://scenes/spear.tscn" id="2_7hdwp"]
-[ext_resource type="Texture2D" uid="uid://bk1y75smh2r24" path="res://assets/lizard spear thrower/0002.png" id="3_j5hxg"]
-[ext_resource type="Texture2D" uid="uid://b35nbf31mwwbl" path="res://assets/lizard spear thrower/0003.png" id="4_0chv4"]
-[ext_resource type="Texture2D" uid="uid://bsw4cqf55gj7b" path="res://assets/lizard spear thrower/0004.png" id="5_vriws"]
-[ext_resource type="Texture2D" uid="uid://1rr1bmsp734o" path="res://assets/lizard spear thrower/0005.png" id="6_8jn7h"]
-[ext_resource type="Texture2D" uid="uid://b8rsqw03g06ee" path="res://assets/lizard spear thrower/0006.png" id="7_jnftf"]
-[ext_resource type="Texture2D" uid="uid://b2jna3hsvy4wv" path="res://assets/lizard spear thrower/0007.png" id="8_6ayyc"]
-[ext_resource type="Texture2D" uid="uid://cnc14fxymli4p" path="res://assets/lizard spear thrower/0008.png" id="9_dyt0t"]
-[ext_resource type="Texture2D" uid="uid://ctwku26u2vm6m" path="res://assets/lizard spear thrower/0009.png" id="10_lhq6v"]
-[ext_resource type="Texture2D" uid="uid://bw07l681ftfck" path="res://assets/lizard spear thrower/0010.png" id="11_xy374"]
-[ext_resource type="Texture2D" uid="uid://dbr8yk54w4k3p" path="res://assets/lizard spear thrower/0011.png" id="12_gf7qt"]
-[ext_resource type="Texture2D" uid="uid://d2pbfqn2lahw0" path="res://assets/lizard spear thrower/0012.png" id="13_oltkq"]
-[ext_resource type="Texture2D" uid="uid://cfpl6f37h0boh" path="res://assets/lizard spear thrower/0013.png" id="14_kggvt"]
-[ext_resource type="Texture2D" uid="uid://b15ty4oiqxjn0" path="res://assets/lizard spear thrower/0014.png" id="15_1eff8"]
-[ext_resource type="Texture2D" uid="uid://cjrkjp1qjvkvt" path="res://assets/lizard spear thrower/0015.png" id="16_km55t"]
-[ext_resource type="Texture2D" uid="uid://fu7u7jcrvlu" path="res://assets/lizard spear thrower/0016.png" id="17_3pxyc"]
-[ext_resource type="Texture2D" uid="uid://bb4n6wt0ou8jf" path="res://assets/lizard spear thrower/0017.png" id="18_a2i2l"]
-[ext_resource type="Texture2D" uid="uid://bb0kjj7pvyfbr" path="res://assets/lizard spear thrower/0018.png" id="19_qpbf4"]
-[ext_resource type="Texture2D" uid="uid://bt3dajdtehclo" path="res://assets/lizard spear thrower/0019.png" id="20_s6koy"]
-[ext_resource type="Texture2D" uid="uid://dd3ruw34pkd5d" path="res://assets/lizard spear thrower/0020.png" id="21_13ubi"]
-[ext_resource type="Texture2D" uid="uid://e1g7ddawodxy" path="res://assets/lizard spear thrower/0021.png" id="22_cf36k"]
-[ext_resource type="Texture2D" uid="uid://bleopj82jvspl" path="res://assets/lizard spear thrower/0022.png" id="23_nkhd5"]
-[ext_resource type="Texture2D" uid="uid://cppjtwslphrqm" path="res://assets/lizard spear thrower/0023.png" id="24_4ul20"]
-[ext_resource type="Texture2D" uid="uid://bpmyhvu7tlmgw" path="res://assets/lizard spear thrower/0024.png" id="25_ybosi"]
-[ext_resource type="Texture2D" uid="uid://dod1ohjoiaccg" path="res://assets/lizard spear thrower/0025.png" id="26_aonnb"]
-[ext_resource type="Texture2D" uid="uid://ct05f1gstbdb4" path="res://assets/lizard spear thrower/0026.png" id="27_clh7t"]
-[ext_resource type="Texture2D" uid="uid://bnk0pbatedjyy" path="res://assets/lizard spear thrower/0027.png" id="28_g28fq"]
-[ext_resource type="Texture2D" uid="uid://7npqvp8g8rp3" path="res://assets/lizard spear thrower/0028.png" id="29_yahnv"]
-[ext_resource type="Texture2D" uid="uid://conshmufm728e" path="res://assets/lizard spear thrower/0029.png" id="30_7wpqo"]
-[ext_resource type="Texture2D" uid="uid://dtsdf10qc0nyv" path="res://assets/lizard spear thrower/0030.png" id="31_7nsj6"]
-[ext_resource type="Texture2D" uid="uid://d28qc7v3fess7" path="res://assets/lizard spear thrower/0031.png" id="32_r6kp1"]
-[ext_resource type="Texture2D" uid="uid://bo5nroaxpw84l" path="res://assets/lizard spear thrower/0032.png" id="33_em7re"]
-[ext_resource type="Texture2D" uid="uid://dho2xcm6hupre" path="res://assets/lizard spear thrower/0033.png" id="34_0j63a"]
+[ext_resource type="Texture2D" uid="uid://b7rju2mjnl72w" path="res://assets/lizard spear thrower colored/0000.png" id="3_2c0e5"]
+[ext_resource type="Texture2D" uid="uid://btnm3ftyh4op5" path="res://assets/lizard spear thrower colored/0001.png" id="4_1xkfi"]
+[ext_resource type="Texture2D" uid="uid://3g2lw76xfn4k" path="res://assets/lizard spear thrower colored/0002.png" id="5_ea7l3"]
+[ext_resource type="Texture2D" uid="uid://bittppk03cljq" path="res://assets/lizard spear thrower colored/0003.png" id="6_iejps"]
+[ext_resource type="Texture2D" uid="uid://basvjgmj6wury" path="res://assets/lizard spear thrower colored/0004.png" id="7_t2k82"]
+[ext_resource type="Texture2D" uid="uid://dvq44lt82wnx2" path="res://assets/lizard spear thrower colored/0005.png" id="8_s1eve"]
+[ext_resource type="Texture2D" uid="uid://b41h03y8tfv8l" path="res://assets/lizard spear thrower colored/0006.png" id="9_8hacb"]
+[ext_resource type="Texture2D" uid="uid://b4woojlnt7fei" path="res://assets/lizard spear thrower colored/0007.png" id="10_jem2t"]
+[ext_resource type="Texture2D" uid="uid://ci1hwhnmwlxxt" path="res://assets/lizard spear thrower colored/0008.png" id="11_tpf07"]
+[ext_resource type="Texture2D" uid="uid://b1x1bepp43vc3" path="res://assets/lizard spear thrower colored/0009.png" id="12_hn24i"]
+[ext_resource type="Texture2D" uid="uid://dos2leu01s887" path="res://assets/lizard spear thrower colored/0010.png" id="13_vj4gr"]
+[ext_resource type="Texture2D" uid="uid://5ykhhmeqq488" path="res://assets/lizard spear thrower colored/0011.png" id="14_vouc1"]
+[ext_resource type="Texture2D" uid="uid://bcfi8qmtovf2c" path="res://assets/lizard spear thrower colored/0012.png" id="15_v31pv"]
+[ext_resource type="Texture2D" uid="uid://8gflc7e8eg1n" path="res://assets/lizard spear thrower colored/0013.png" id="16_5kqrn"]
+[ext_resource type="Texture2D" uid="uid://yhlu6d2blrga" path="res://assets/lizard spear thrower colored/0014.png" id="17_5d68x"]
+[ext_resource type="Texture2D" uid="uid://c8mx3yh0bm88p" path="res://assets/lizard spear thrower colored/0015.png" id="18_0p2ax"]
+[ext_resource type="Texture2D" uid="uid://cs7hsqhfix01g" path="res://assets/lizard spear thrower colored/0016.png" id="19_7wlp1"]
+[ext_resource type="Texture2D" uid="uid://bux54tee5qm32" path="res://assets/lizard spear thrower colored/0017.png" id="20_kf1ue"]
+[ext_resource type="Texture2D" uid="uid://5ma67yacxbkt" path="res://assets/lizard spear thrower colored/0018.png" id="21_j13m1"]
+[ext_resource type="Texture2D" uid="uid://dfmjwo2vw2yvs" path="res://assets/lizard spear thrower colored/0019.png" id="22_vbl1k"]
+[ext_resource type="Texture2D" uid="uid://d2vdtv632j8gb" path="res://assets/lizard spear thrower colored/0020.png" id="23_thjsl"]
+[ext_resource type="Texture2D" uid="uid://ctn28b0sdtphs" path="res://assets/lizard spear thrower colored/0021.png" id="24_pit3a"]
+[ext_resource type="Texture2D" uid="uid://bfd3pachci1gk" path="res://assets/lizard spear thrower colored/0022.png" id="25_wegal"]
+[ext_resource type="Texture2D" uid="uid://cjxawqcykdhxx" path="res://assets/lizard spear thrower colored/0023.png" id="26_a7ljl"]
+[ext_resource type="Texture2D" uid="uid://dvibb52jiavns" path="res://assets/lizard spear thrower colored/0024.png" id="27_ayl6t"]
+[ext_resource type="Texture2D" uid="uid://bp5lo4gjrja2g" path="res://assets/lizard spear thrower colored/0025.png" id="28_43jvc"]
+[ext_resource type="Texture2D" uid="uid://dvtm0jdjmvhkv" path="res://assets/lizard spear thrower colored/0026.png" id="29_2f45t"]
+[ext_resource type="Texture2D" uid="uid://da1jri47btt0u" path="res://assets/lizard spear thrower colored/0027.png" id="30_vcfnr"]
+[ext_resource type="Texture2D" uid="uid://bihtiakx4wjmb" path="res://assets/lizard spear thrower colored/0028.png" id="31_ijk6i"]
+[ext_resource type="Texture2D" uid="uid://dbt71u40as3wc" path="res://assets/lizard spear thrower colored/0029.png" id="32_yy1mc"]
+[ext_resource type="Texture2D" uid="uid://doydiyn5add50" path="res://assets/lizard spear thrower colored/0030.png" id="33_ai3xq"]
+[ext_resource type="Texture2D" uid="uid://c5dymxijh6brs" path="res://assets/lizard spear thrower colored/0031.png" id="34_vjhel"]
+[ext_resource type="Texture2D" uid="uid://dyc4a6gtbowct" path="res://assets/lizard spear thrower colored/0032.png" id="35_rmtv4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ucnfr"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_1jrbt")
+"texture": ExtResource("3_2c0e5")
 }, {
 "duration": 1.0,
-"texture": ExtResource("2_1h7y0")
+"texture": ExtResource("4_1xkfi")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_j5hxg")
+"texture": ExtResource("5_ea7l3")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_0chv4")
+"texture": ExtResource("6_iejps")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_vriws")
+"texture": ExtResource("7_t2k82")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_8jn7h")
+"texture": ExtResource("8_s1eve")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_jnftf")
+"texture": ExtResource("9_8hacb")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_6ayyc")
+"texture": ExtResource("10_jem2t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_dyt0t")
+"texture": ExtResource("11_tpf07")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_lhq6v")
+"texture": ExtResource("12_hn24i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_xy374")
+"texture": ExtResource("13_vj4gr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("12_gf7qt")
+"texture": ExtResource("14_vouc1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("13_oltkq")
+"texture": ExtResource("15_v31pv")
 }, {
 "duration": 1.0,
-"texture": ExtResource("14_kggvt")
+"texture": ExtResource("16_5kqrn")
 }, {
 "duration": 1.0,
-"texture": ExtResource("15_1eff8")
+"texture": ExtResource("17_5d68x")
 }, {
 "duration": 1.0,
-"texture": ExtResource("16_km55t")
+"texture": ExtResource("18_0p2ax")
 }, {
 "duration": 1.0,
-"texture": ExtResource("17_3pxyc")
+"texture": ExtResource("19_7wlp1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("18_a2i2l")
+"texture": ExtResource("20_kf1ue")
 }, {
 "duration": 1.0,
-"texture": ExtResource("19_qpbf4")
+"texture": ExtResource("21_j13m1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("20_s6koy")
+"texture": ExtResource("22_vbl1k")
 }, {
 "duration": 1.0,
-"texture": ExtResource("21_13ubi")
+"texture": ExtResource("23_thjsl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("22_cf36k")
+"texture": ExtResource("24_pit3a")
 }, {
 "duration": 1.0,
-"texture": ExtResource("23_nkhd5")
+"texture": ExtResource("25_wegal")
 }, {
 "duration": 1.0,
-"texture": ExtResource("24_4ul20")
+"texture": ExtResource("26_a7ljl")
 }, {
 "duration": 1.0,
-"texture": ExtResource("25_ybosi")
+"texture": ExtResource("27_ayl6t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("26_aonnb")
+"texture": ExtResource("28_43jvc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("27_clh7t")
+"texture": ExtResource("29_2f45t")
 }, {
 "duration": 1.0,
-"texture": ExtResource("28_g28fq")
+"texture": ExtResource("30_vcfnr")
 }, {
 "duration": 1.0,
-"texture": ExtResource("29_yahnv")
+"texture": ExtResource("31_ijk6i")
 }, {
 "duration": 1.0,
-"texture": ExtResource("30_7wpqo")
+"texture": ExtResource("32_yy1mc")
 }, {
 "duration": 1.0,
-"texture": ExtResource("31_7nsj6")
+"texture": ExtResource("33_ai3xq")
 }, {
 "duration": 1.0,
-"texture": ExtResource("32_r6kp1")
+"texture": ExtResource("34_vjhel")
 }, {
 "duration": 1.0,
-"texture": ExtResource("33_em7re")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_0j63a")
+"texture": ExtResource("35_rmtv4")
 }],
 "loop": true,
 "name": &"throw",
@@ -160,7 +156,7 @@ metadata/_edit_group_ = true
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ucnfr")
 animation = &"throw"
-frame_progress = 0.311661
+frame_progress = 0.0442701
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-4.5, 76)
