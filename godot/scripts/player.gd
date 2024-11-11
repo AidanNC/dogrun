@@ -7,6 +7,7 @@ extends CharacterBody2D
 var max_gravity = 1500
 
 var health = 5
+var score = 0
 
 var facingLeft = true
 var inHitstun = false
@@ -128,12 +129,13 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		$AnimatedSprite2D.animation = "jump_up"
 		health -= 1
 		print(health)
-	elif area.name == "Food":
-		if area.get_node("type").animation == "soda":
-			print("soda")
+	
+	if area.name.substr(0,4) == "Food":
+		var type = area.get_node("type").animation
+		if type == "soda":
 			speed += 100
-		elif area.get_node("type").animation == "sushi":
-			print("sushi")	
-		elif area.get_node("type").animation == "pizza":
-			print("pizza")
+		elif type == "sushi":
+			score += 15
+		elif type == "pizza":
+			health += 1
 	
