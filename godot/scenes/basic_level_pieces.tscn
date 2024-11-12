@@ -1,0 +1,16 @@
+[gd_scene load_steps=5 format=3 uid="uid://dy44haftbw11u"]
+
+[ext_resource type="PackedScene" uid="uid://u3gdb72ahf7p" path="res://scenes/parallax_foreground.tscn" id="1_naw5n"]
+[ext_resource type="PackedScene" uid="uid://dnx1kc7gjs78a" path="res://scenes/parallax_background.tscn" id="2_e8hp2"]
+[ext_resource type="PackedScene" uid="uid://be1kj04oplmyn" path="res://scenes/hud.tscn" id="3_pceq6"]
+[ext_resource type="PackedScene" uid="uid://bj3gmspbymmu5" path="res://scenes/score_hud.tscn" id="4_mmdx7"]
+
+[node name="BasicLevelPieces" type="Node2D"]
+
+[node name="ParallaxForeground" parent="." instance=ExtResource("1_naw5n")]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("2_e8hp2")]
+
+[node name="HUD" parent="." instance=ExtResource("3_pceq6")]
+
+[node name="scoreHUD" parent="." instance=ExtResource("4_mmdx7")]

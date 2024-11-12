@@ -34,6 +34,9 @@ func throwSpear():
 	#this didn't make any sense coding it, so idk I will need to redo this at some point
 	var distance = abs(Player.global_position.x - global_position.x)
 	
+	if distance > 5000:
+		return
+	
 	var g = 20 # should be consistent with spear gravity
 	var inner = distance * g /(throw_power * throw_power)
 	var theta = 0.5 * asin(inner)

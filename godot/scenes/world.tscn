@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://duq34pcxha51a"]
+[gd_scene load_steps=11 format=3 uid="uid://duq34pcxha51a"]
 
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="1_4b21f"]
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="2_oxcol"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="7_6pqbj"]
 [ext_resource type="PackedScene" uid="uid://be1kj04oplmyn" path="res://scenes/hud.tscn" id="8_ivvpb"]
 [ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="9_hq8hh"]
+[ext_resource type="PackedScene" uid="uid://bj3gmspbymmu5" path="res://scenes/score_hud.tscn" id="10_6wsos"]
 
 [node name="World" type="Node2D"]
 position = Vector2(2264, 1320)
@@ -115,3 +116,5 @@ position = Vector2(3431, 287)
 
 [node name="Food10" parent="." instance=ExtResource("9_hq8hh")]
 position = Vector2(3936, 173)
+
+[node name="scoreHUD" parent="." instance=ExtResource("10_6wsos")]

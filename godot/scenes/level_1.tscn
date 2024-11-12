@@ -1,0 +1,175 @@
+[gd_scene load_steps=8 format=3 uid="uid://vqfdck2ce6jo"]
+
+[ext_resource type="PackedScene" uid="uid://dy44haftbw11u" path="res://scenes/basic_level_pieces.tscn" id="2_3seuw"]
+[ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="3_81wj1"]
+[ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="4_dnwmd"]
+[ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="4_khf41"]
+[ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="5_wwq8k"]
+[ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="6_2i6ko"]
+[ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="7_fy7ts"]
+
+[node name="Level1" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("3_81wj1")]
+position = Vector2(550, 1450)
+
+[node name="BasicLevelPieces" parent="." instance=ExtResource("2_3seuw")]
+
+[node name="platforms" type="Node2D" parent="."]
+
+[node name="lower_platform" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(-500, 1600)
+
+[node name="lower_platform2" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(-500, 1200)
+
+[node name="lower_platform3" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(-500, 750)
+
+[node name="lower_platform4" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(-500, 350)
+
+[node name="lower_platform5" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(-500, -100)
+
+[node name="lower_platform6" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(550, 1600)
+
+[node name="lower_platform7" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(13350, 1700)
+
+[node name="lower_platform8" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(14350, 1700)
+
+[node name="lower_platform9" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(15400, 1700)
+
+[node name="lower_platform10" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(16450, 1700)
+
+[node name="lower_platform11" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(17500, 1700)
+
+[node name="lower_platform12" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(18550, 1700)
+
+[node name="lower_platform13" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(19600, 1700)
+
+[node name="lower_platform14" parent="platforms" instance=ExtResource("4_dnwmd")]
+position = Vector2(20600, 1700)
+
+[node name="Platform" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(1550, 1500)
+
+[node name="Platform2" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(2450, 1350)
+
+[node name="Platform3" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(3350, 1200)
+
+[node name="Platform4" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(4250, 1050)
+
+[node name="Platform5" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(5200, 900)
+
+[node name="Platform6" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(7000, 1000)
+
+[node name="Platform8" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(7900, 900)
+
+[node name="Platform9" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(8800, 900)
+
+[node name="Platform10" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(9700, 1000)
+
+[node name="Platform11" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(10600, 1200)
+
+[node name="Platform12" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(11500, 1400)
+
+[node name="Platform13" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(12400, 1600)
+
+[node name="Platform14" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(16200, 1300)
+
+[node name="Platform15" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(17750, 1250)
+
+[node name="Platform16" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(18950, 900)
+
+[node name="Platform18" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(21600, 1600)
+
+[node name="Platform17" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(15000, 950)
+
+[node name="Platform7" parent="platforms" instance=ExtResource("4_khf41")]
+position = Vector2(6100, 1000)
+
+[node name="enemies" type="Node2D" parent="."]
+
+[node name="Slug" parent="enemies" instance=ExtResource("5_wwq8k")]
+position = Vector2(5900, 700)
+
+[node name="Slug2" parent="enemies" instance=ExtResource("5_wwq8k")]
+position = Vector2(13100, 1500)
+
+[node name="Slug3" parent="enemies" instance=ExtResource("5_wwq8k")]
+position = Vector2(16900, 1500)
+
+[node name="Slug4" parent="enemies" instance=ExtResource("5_wwq8k")]
+position = Vector2(19750, 1400)
+
+[node name="lizard" parent="enemies" instance=ExtResource("6_2i6ko")]
+position = Vector2(14650, 600)
+
+[node name="lizard2" parent="enemies" instance=ExtResource("6_2i6ko")]
+position = Vector2(16150, 1000)
+
+[node name="lizard3" parent="enemies" instance=ExtResource("6_2i6ko")]
+position = Vector2(17650, 900)
+
+[node name="lizard4" parent="enemies" instance=ExtResource("6_2i6ko")]
+position = Vector2(18900, 600)
+
+[node name="powerups" type="Node2D" parent="."]
+
+[node name="Food" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(1500, 1300)
+
+[node name="Food2" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(3250, 1000)
+
+[node name="Food3" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(5200, 700)
+
+[node name="Food4" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(7650, 700)
+
+[node name="Food5" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(9850, 800)
+
+[node name="Food6" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(11850, 1150)
+
+[node name="Food7" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(14350, 1550)
+
+[node name="Food8" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(15300, 750)
+
+[node name="Food9" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(17700, 1600)
+
+[node name="Food10" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(19350, 700)
+
+[node name="Food11" parent="powerups" instance=ExtResource("7_fy7ts")]
+position = Vector2(21300, 1400)

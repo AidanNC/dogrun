@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj3gmspbymmu5"]
+
+[ext_resource type="Script" path="res://scripts/score_hud.gd" id="1_lwea6"]
+[ext_resource type="FontFile" uid="uid://c8xdd53q60051" path="res://assets/HanaleiFill-Regular.ttf" id="2_wo4al"]
+
+[node name="scoreHUD" type="CanvasLayer"]
+script = ExtResource("1_lwea6")
+
+[node name="Score" type="Label" parent="."]
+offset_left = 1489.0
+offset_top = 17.0
+offset_right = 1894.0
+offset_bottom = 101.0
+theme_override_fonts/font = ExtResource("2_wo4al")
+theme_override_font_sizes/font_size = 64
+horizontal_alignment = 2

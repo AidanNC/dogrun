@@ -161,9 +161,9 @@ animation = &"jump_up"
 [node name="DogBite" parent="." instance=ExtResource("27_l3x5q")]
 position = Vector2(24, 4)
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="PlayerHitbox" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerHitbox"]
 position = Vector2(-3, 3.5)
 shape = SubResource("RectangleShape2D_uhu0o")
 
@@ -174,4 +174,4 @@ volume_db = 8.0
 [node name="Hit" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("29_cid8p")
 
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_entered" from="PlayerHitbox" to="." method="_on_area_2d_area_entered"]
