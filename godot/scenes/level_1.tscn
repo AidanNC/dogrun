@@ -11,7 +11,7 @@
 [node name="Level1" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("3_81wj1")]
-position = Vector2(550, 1450)
+position = Vector2(200, 1450)
 
 [node name="BasicLevelPieces" parent="." instance=ExtResource("2_3seuw")]
 
