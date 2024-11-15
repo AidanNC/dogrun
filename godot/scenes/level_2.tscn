@@ -1,0 +1,48 @@
+[gd_scene load_steps=7 format=3 uid="uid://diqfgrl4uiqvp"]
+
+[ext_resource type="PackedScene" uid="uid://dy44haftbw11u" path="res://scenes/basic_level_pieces.tscn" id="1_brvoa"]
+[ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="2_rklnf"]
+[ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="3_xdt8y"]
+[ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="4_q8f1u"]
+[ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="5_kln6e"]
+[ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="6_k1d3f"]
+
+[node name="level_2" type="Node2D"]
+
+[node name="BasicLevelPieces" parent="." instance=ExtResource("1_brvoa")]
+
+[node name="Player" parent="." instance=ExtResource("2_rklnf")]
+position = Vector2(969, 1427)
+
+[node name="platforms" type="Node2D" parent="."]
+
+[node name="lower_platform" parent="platforms" instance=ExtResource("3_xdt8y")]
+position = Vector2(986, 1749)
+
+[node name="lower_platform5" parent="platforms" instance=ExtResource("3_xdt8y")]
+position = Vector2(242, 1642)
+
+[node name="lower_platform6" parent="platforms" instance=ExtResource("3_xdt8y")]
+position = Vector2(4881, 1581)
+
+[node name="lower_platform2" parent="platforms" instance=ExtResource("3_xdt8y")]
+position = Vector2(2026, 1749)
+
+[node name="lower_platform3" parent="platforms" instance=ExtResource("3_xdt8y")]
+position = Vector2(3067, 1737)
+
+[node name="lower_platform4" parent="platforms" instance=ExtResource("3_xdt8y")]
+position = Vector2(4107, 1737)
+
+[node name="enemies" type="Node2D" parent="."]
+
+[node name="Slug" parent="enemies" instance=ExtResource("4_q8f1u")]
+position = Vector2(2252, 1521)
+
+[node name="lizard" parent="enemies" instance=ExtResource("5_kln6e")]
+position = Vector2(2977, 1414)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Food" parent="Node2D" instance=ExtResource("6_k1d3f")]
+position = Vector2(451, 1507)
