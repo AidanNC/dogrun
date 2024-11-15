@@ -128,7 +128,8 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		velocity.x = -1000 if facingLeft else 1000
 		$AnimatedSprite2D.animation = "jump_up"
 		health -= 1
-		print(health)
+		if health <= 0:
+			get_tree().reload_current_scene()
 	
 	if area.name.substr(0,4) == "Food":
 		var type = area.get_node("type").animation

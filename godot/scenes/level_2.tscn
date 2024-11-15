@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://diqfgrl4uiqvp"]
+[gd_scene load_steps=9 format=3 uid="uid://bu7it3f67seh7"]
 
 [ext_resource type="PackedScene" uid="uid://dy44haftbw11u" path="res://scenes/basic_level_pieces.tscn" id="1_brvoa"]
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="2_rklnf"]
 [ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="3_xdt8y"]
+[ext_resource type="PackedScene" uid="uid://dxjl3yqidljkb" path="res://scenes/end_door.tscn" id="4_d4gqr"]
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="4_q8f1u"]
+[ext_resource type="PackedScene" uid="uid://vqfdck2ce6jo" path="res://scenes/level_1.tscn" id="5_kchop"]
 [ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="5_kln6e"]
 [ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="6_k1d3f"]
 
@@ -25,6 +27,12 @@ position = Vector2(242, 1642)
 [node name="lower_platform6" parent="platforms" instance=ExtResource("3_xdt8y")]
 position = Vector2(4881, 1581)
 
+[node name="lower_platform7" parent="platforms" instance=ExtResource("3_xdt8y")]
+position = Vector2(5915, 1578)
+
+[node name="lower_platform8" parent="platforms" instance=ExtResource("3_xdt8y")]
+position = Vector2(6952, 1578)
+
 [node name="lower_platform2" parent="platforms" instance=ExtResource("3_xdt8y")]
 position = Vector2(2026, 1749)
 
@@ -33,6 +41,10 @@ position = Vector2(3067, 1737)
 
 [node name="lower_platform4" parent="platforms" instance=ExtResource("3_xdt8y")]
 position = Vector2(4107, 1737)
+
+[node name="EndDoor" parent="platforms" instance=ExtResource("4_d4gqr")]
+position = Vector2(7316, 1042)
+nextlevel = ExtResource("5_kchop")
 
 [node name="enemies" type="Node2D" parent="."]
 
