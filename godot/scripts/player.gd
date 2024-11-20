@@ -14,6 +14,10 @@ var inHitstun = false
 var hasDoubleJump = true
 
 
+func _process(delta: float) -> void:
+	if health <= 0:
+		get_tree().reload_current_scene()
+
 func _physics_process(delta):
 	
 	if !is_on_floor():
@@ -33,6 +37,10 @@ func _physics_process(delta):
 	handleMovement()
 	
 	move_and_slide()
+	
+	#check to see if the player has fallen off the screen
+	if position.y > 2500:
+		health -= 1
 	
 	playerAnimation()
 	
@@ -128,8 +136,6 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 		velocity.x = -1000 if facingLeft else 1000
 		$AnimatedSprite2D.animation = "jump_up"
 		health -= 1
-		if health <= 0:
-			get_tree().reload_current_scene()
 	
 	if area.name.substr(0,4) == "Food":
 		var type = area.get_node("type").animation
