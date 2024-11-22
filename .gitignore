@@ -16,6 +16,10 @@ mono_crash.*.json
 
 # sc store
 .DS_Store
+/.DS_Store
+
+#exports
+godot/html_export/
 
 #vscode
 .vscode/

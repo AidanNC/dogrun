@@ -2,14 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://b7q287r8cgpr1" path="res://assets/Untitled_Artwork 23.png" id="1_l08a2"]
 [ext_resource type="Script" path="res://scripts/main_screen.gd" id="1_npoeq"]
-[ext_resource type="PackedScene" uid="uid://vqfdck2ce6jo" path="res://scenes/level_1.tscn" id="2_xtqrr"]
+[ext_resource type="PackedScene" uid="uid://bu7it3f67seh7" path="res://scenes/level_2.tscn" id="2_l3yfm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_48ro6"]
 size = Vector2(707, 198)
 
 [node name="MainScreen" type="Node2D"]
 script = ExtResource("1_npoeq")
-level1 = ExtResource("2_xtqrr")
+level1 = ExtResource("2_l3yfm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(960, 540)

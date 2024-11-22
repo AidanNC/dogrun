@@ -15,14 +15,14 @@
 position = Vector2(2264, 1320)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(782, 191)
+position = Vector2(-2221, 238)
 enabled = false
 limit_top = -200
 limit_bottom = 2000
 editor_draw_limits = true
 
 [node name="Player" parent="." instance=ExtResource("1_4b21f")]
-position = Vector2(782, 191)
+position = Vector2(-2221, 238)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")

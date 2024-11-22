@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://vqfdck2ce6jo"]
+[gd_scene load_steps=10 format=3 uid="uid://vqfdck2ce6jo"]
 
 [ext_resource type="PackedScene" uid="uid://dy44haftbw11u" path="res://scenes/basic_level_pieces.tscn" id="2_3seuw"]
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="3_81wj1"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="5_wwq8k"]
 [ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="6_2i6ko"]
 [ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="7_fy7ts"]
+[ext_resource type="PackedScene" uid="uid://dxjl3yqidljkb" path="res://scenes/end_door.tscn" id="8_o4j65"]
+[ext_resource type="PackedScene" uid="uid://duq34pcxha51a" path="res://scenes/world.tscn" id="9_imgp6"]
 
 [node name="Level1" type="Node2D"]
 
@@ -173,3 +175,7 @@ position = Vector2(19350, 700)
 
 [node name="Food11" parent="powerups" instance=ExtResource("7_fy7ts")]
 position = Vector2(21300, 1400)
+
+[node name="EndDoor" parent="." instance=ExtResource("8_o4j65")]
+position = Vector2(21900, 1000)
+nextlevel = ExtResource("9_imgp6")
