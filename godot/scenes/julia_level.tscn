@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://c03nveafw8p4n"]
+
+[ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="2_wjbfj"]
+[ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="3_itdwy"]
+[ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="4_tl747"]
+[ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="4_xqi6i"]
+
+[node name="JuliaLevel" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_wjbfj")]
+position = Vector2(94, 1499)
+
+[node name="Platforms" type="Node2D" parent="."]
+
+[node name="Platform" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(355, 1203)
+scale = Vector2(0.75, 1)
+
+[node name="Platform2" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(-414, 642)
+
+[node name="Platform6" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(2511, 158)
+
+[node name="Platform7" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(3006, -217)
+rotation = -1.5708
+
+[node name="Platform4" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(1509, 487)
+rotation = 0.812027
+
+[node name="Platform5" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(2127, 1161)
+rotation = 0.81832
+
+[node name="Platform8" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(3258, 1708)
+
+[node name="Platform10" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(3313, 935)
+scale = Vector2(0.5, 0.5)
+
+[node name="Platform3" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(809, 167)
+
+[node name="Platform9" parent="Platforms" instance=ExtResource("4_xqi6i")]
+position = Vector2(-452, 975)
+scale = Vector2(1, 10)
+
+[node name="lower_platform" parent="Platforms" instance=ExtResource("3_itdwy")]
+position = Vector2(486, 1674)
+
+[node name="Enemy" type="Node2D" parent="."]
+
+[node name="lizard" parent="Enemy" instance=ExtResource("4_tl747")]
+position = Vector2(3293, 657)

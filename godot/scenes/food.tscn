@@ -206,6 +206,7 @@ radius = 136.033
 [node name="Food" type="Area2D"]
 scale = Vector2(0.3, 0.3)
 script = ExtResource("1_nrq50")
+type = -1
 
 [node name="type" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_ocyrf")

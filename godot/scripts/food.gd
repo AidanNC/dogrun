@@ -1,9 +1,12 @@
 extends Area2D
 
+@export var type: int;
+
 func _ready():
 	var rng = RandomNumberGenerator.new()
 	const types = ["soda", "pizza","sushi"]
-	$type.animation = types[rng.randf_range(0, 3)]
+	type = rng.randf_range(0, 3) if type == -1 else type
+	$type.animation = types[type]
 	$type.play()
 
 

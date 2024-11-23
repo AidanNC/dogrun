@@ -20,11 +20,16 @@ func _process(delta: float) -> void:
 
 func _physics_process(delta):
 	
+	if global_position.y < -300:
+		velocity.y = 0
+	if speed > 1000:
+		speed -= 2
+	
 	if !is_on_floor():
 		velocity.y += gravity
 		
 		velocity.y = min(velocity.y, max_gravity)
-			
+	
 	else:
 		hasDoubleJump = true
 	if is_on_wall():
@@ -140,7 +145,7 @@ func _on_area_2d_area_entered(area: Area2D) -> void:
 	if area.name.substr(0,4) == "Food":
 		var type = area.get_node("type").animation
 		if type == "soda":
-			speed += 100
+			speed += 150
 		elif type == "sushi":
 			score += 15
 		elif type == "pizza":

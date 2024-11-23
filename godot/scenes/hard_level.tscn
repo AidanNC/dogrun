@@ -1,0 +1,514 @@
+[gd_scene load_steps=9 format=3 uid="uid://cub0uo0lkx44m"]
+
+[ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="1_0hfor"]
+[ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="2_4m25g"]
+[ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="2_rx6t5"]
+[ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="3_0ys05"]
+[ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="4_g84tq"]
+[ext_resource type="PackedScene" uid="uid://dxjl3yqidljkb" path="res://scenes/end_door.tscn" id="6_blju3"]
+[ext_resource type="PackedScene" uid="uid://dy44haftbw11u" path="res://scenes/basic_level_pieces.tscn" id="7_q2fer"]
+[ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="8_ew0x1"]
+
+[node name="HardLevel" type="Node2D"]
+
+[node name="sections" type="Node2D" parent="."]
+
+[node name="start plat" type="Node2D" parent="sections"]
+
+[node name="lower_platform2" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(481, 1656)
+
+[node name="lower_platform3" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(1522, 1835)
+
+[node name="lower_platform4" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(2532, 1835)
+
+[node name="lower_platform5" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(3542, 1835)
+
+[node name="lower_platform6" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(4560, 1835)
+
+[node name="lower_platform7" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(5587, 1835)
+
+[node name="lower_platform8" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(6622, 1835)
+
+[node name="lower_platform9" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(7551, 1835)
+
+[node name="lower_platform10" parent="sections/start plat" instance=ExtResource("1_0hfor")]
+position = Vector2(8561, 1763)
+
+[node name="Slug" parent="sections/start plat" instance=ExtResource("2_rx6t5")]
+position = Vector2(4086, 1611)
+
+[node name="Slug2" parent="sections/start plat" instance=ExtResource("2_rx6t5")]
+position = Vector2(6875, 1614)
+
+[node name="Slug3" parent="sections/start plat" instance=ExtResource("2_rx6t5")]
+position = Vector2(5863, 1663)
+
+[node name="bridge1" type="Node2D" parent="sections"]
+
+[node name="Platform" parent="sections/bridge1" instance=ExtResource("2_4m25g")]
+position = Vector2(9758, 1711)
+rotation = -0.267782
+
+[node name="Platform2" parent="sections/bridge1" instance=ExtResource("2_4m25g")]
+position = Vector2(11004, 1542)
+rotation = -0.0684676
+
+[node name="Platform3" parent="sections/bridge1" instance=ExtResource("2_4m25g")]
+position = Vector2(12269, 1535)
+rotation = 0.0210308
+
+[node name="Platform4" parent="sections/bridge1" instance=ExtResource("2_4m25g")]
+position = Vector2(13433, 1700)
+rotation = 0.121913
+
+[node name="lower_platform" parent="sections/bridge1" instance=ExtResource("1_0hfor")]
+position = Vector2(14581, 1880)
+
+[node name="lower_platform2" parent="sections/bridge1" instance=ExtResource("1_0hfor")]
+position = Vector2(15622, 1880)
+
+[node name="lower_platform3" parent="sections/bridge1" instance=ExtResource("1_0hfor")]
+position = Vector2(16653, 1880)
+
+[node name="lower_platform4" parent="sections/bridge1" instance=ExtResource("1_0hfor")]
+position = Vector2(17684, 1880)
+
+[node name="Platform5" parent="sections/bridge1" instance=ExtResource("2_4m25g")]
+position = Vector2(16175, 1398)
+
+[node name="lizard" parent="sections/bridge1" instance=ExtResource("4_g84tq")]
+position = Vector2(16146, 1047)
+
+[node name="jumps" type="Node2D" parent="sections"]
+
+[node name="Platform" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(18908, 1761)
+rotation = -0.340973
+
+[node name="Platform2" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(19918, 1255)
+rotation = -0.649955
+
+[node name="Platform3" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(20777, 495.999)
+rotation = -0.917487
+
+[node name="Platform4" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(21822, -322)
+rotation = -2.14051
+
+[node name="Platform5" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(22153, 536)
+rotation = -1.7747
+
+[node name="Platform6" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(22215, 959)
+rotation = -1.64827
+
+[node name="Platform7" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(22800, 1650)
+rotation = -1.52836
+
+[node name="Platform8" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(22909, 965)
+rotation = -1.39226
+
+[node name="Platform9" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(24015, 584)
+rotation = -0.0491917
+
+[node name="Platform10" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(24865, 713)
+rotation = 0.304988
+
+[node name="Platform11" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(25653, 1084)
+rotation = 0.498474
+
+[node name="Platform12" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(26378, 1565)
+rotation = 0.625832
+
+[node name="Platform13" parent="sections/jumps" instance=ExtResource("2_4m25g")]
+position = Vector2(27135, 1843)
+
+[node name="lizardjump" type="Node2D" parent="sections"]
+
+[node name="Platform" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(28189, 1609)
+
+[node name="Platform2" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(29257, 1186)
+
+[node name="Platform6" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(30152, 1195)
+
+[node name="Platform5" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(32814, 572)
+
+[node name="Platform8" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(35779, 1099)
+
+[node name="Platform9" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(34421, 676)
+
+[node name="Platform10" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(37433, 1666)
+
+[node name="Platform4" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(29637, 69)
+rotation = 1.44825
+
+[node name="Platform3" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(30035, 509)
+
+[node name="Platform7" parent="sections/lizardjump" instance=ExtResource("2_4m25g")]
+position = Vector2(30518, 442)
+rotation = -0.718675
+scale = Vector2(0.3, 1)
+
+[node name="lizard" parent="sections/lizardjump" instance=ExtResource("4_g84tq")]
+position = Vector2(30399, 183)
+
+[node name="lizard2" parent="sections/lizardjump" instance=ExtResource("4_g84tq")]
+position = Vector2(32495, 236)
+
+[node name="lower_platform" parent="sections/lizardjump" instance=ExtResource("1_0hfor")]
+position = Vector2(29178, 1846)
+
+[node name="lower_platform2" parent="sections/lizardjump" instance=ExtResource("1_0hfor")]
+position = Vector2(30215, 1846)
+
+[node name="lower_platform3" parent="sections/lizardjump" instance=ExtResource("1_0hfor")]
+position = Vector2(31249, 1846)
+
+[node name="lower_platform4" parent="sections/lizardjump" instance=ExtResource("1_0hfor")]
+position = Vector2(32268, 1846)
+
+[node name="slugzone" type="Node2D" parent="sections"]
+
+[node name="lower_platform" parent="sections/slugzone" instance=ExtResource("1_0hfor")]
+position = Vector2(38439, 1741)
+
+[node name="lower_platform2" parent="sections/slugzone" instance=ExtResource("1_0hfor")]
+position = Vector2(39471, 1741)
+
+[node name="lower_platform3" parent="sections/slugzone" instance=ExtResource("1_0hfor")]
+position = Vector2(40505, 1741)
+
+[node name="Platform" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(41508, 1665)
+rotation = -0.304364
+
+[node name="Platform2" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(42387, 1418)
+rotation = -0.245759
+
+[node name="Platform3" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(43270, 1206)
+rotation = -0.245759
+
+[node name="Platform4" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(44137, 1007)
+rotation = -0.245759
+
+[node name="Platform5" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(45130, 1389)
+rotation = -0.245759
+
+[node name="Platform6" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(45984, 1175)
+rotation = -0.245759
+
+[node name="Platform7" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(47013, 1550)
+rotation = 0.198138
+
+[node name="Platform8" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(47912, 1620)
+rotation = -0.0522401
+
+[node name="Platform9" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(48799, 1577)
+rotation = -0.0522401
+
+[node name="Platform10" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(49653, 1391)
+rotation = -0.397442
+
+[node name="Platform11" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(50341, 1009)
+rotation = -0.65467
+
+[node name="Platform12" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(51004, 1002)
+rotation = 0.578879
+
+[node name="Platform14" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(51779, 1368)
+rotation = 0.29048
+
+[node name="Platform15" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(52201, 1457)
+rotation = 0.0358739
+
+[node name="Platform16" parent="sections/slugzone" instance=ExtResource("2_4m25g")]
+position = Vector2(53046, 1355)
+rotation = 0.0358739
+
+[node name="Slug2" parent="sections/slugzone" instance=ExtResource("2_rx6t5")]
+position = Vector2(38185, 1500)
+
+[node name="lizard" parent="sections/slugzone" instance=ExtResource("4_g84tq")]
+position = Vector2(39397, 1456)
+
+[node name="lizard2" parent="sections/slugzone" instance=ExtResource("4_g84tq")]
+position = Vector2(40835, 1430)
+
+[node name="lizard3" parent="sections/slugzone" instance=ExtResource("4_g84tq")]
+position = Vector2(44154, 602)
+
+[node name="finalzone" type="Node2D" parent="sections"]
+
+[node name="Platform" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(53949, 1461)
+rotation = 1.62204
+
+[node name="Platform2" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(54563, 1028)
+rotation = 1.62204
+
+[node name="Platform3" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(55201, 705)
+rotation = 1.45458
+
+[node name="Platform4" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(56026, 518)
+rotation = 1.72648
+
+[node name="Platform5" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(56932, 564)
+rotation = 1.24016
+
+[node name="Platform6" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(57704, 831.002)
+rotation = 1.5277
+
+[node name="Platform7" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(58645, 1198)
+rotation = 1.60076
+
+[node name="Platform8" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(59890, 1511)
+rotation = 1.44041
+
+[node name="Platform9" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(60833, 1385)
+rotation = 1.60752
+
+[node name="Platform10" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(61443, 1760)
+rotation = 1.60752
+
+[node name="Platform11" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(62230, 1398)
+rotation = 1.60752
+
+[node name="Platform12" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(61505, 497)
+rotation = 1.60752
+
+[node name="Platform13" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(61551, -413)
+rotation = 1.60752
+
+[node name="Platform14" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(62370, -377)
+rotation = 1.60752
+
+[node name="Platform15" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(62422, 1222)
+rotation = 1.60752
+
+[node name="Platform16" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(63019, 224)
+rotation = 1.60752
+
+[node name="Platform18" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(62993, 1092)
+rotation = 1.60752
+
+[node name="Platform19" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(63381, 1833)
+rotation = 1.60752
+
+[node name="Platform20" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(63502, 253.998)
+rotation = 0.369989
+
+[node name="Platform21" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(64128, 289.998)
+rotation = 0.369989
+
+[node name="Platform22" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(64621, 257)
+rotation = 0.369989
+
+[node name="Platform23" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(65140, 231)
+rotation = 0.369989
+
+[node name="Platform24" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(65629, 208)
+rotation = 0.369989
+
+[node name="Platform25" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(66079, 182)
+rotation = 0.369989
+
+[node name="Platform26" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(66536, 152.998)
+rotation = 0.369989
+
+[node name="Platform27" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(66905, 104)
+rotation = 0.369989
+
+[node name="Platform28" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(64259, 820)
+rotation = 1.56467
+
+[node name="Platform29" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(64967, 826)
+rotation = 1.56467
+
+[node name="Platform30" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(65643, 803)
+rotation = 1.56467
+
+[node name="Platform31" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(66410, 826)
+rotation = 1.56467
+
+[node name="Platform32" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(67180, 761)
+rotation = 1.56467
+
+[node name="Platform33" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(67976, 1459)
+rotation = 1.56467
+
+[node name="Platform34" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(69079, 1674)
+
+[node name="Platform35" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(70156, 1602)
+
+[node name="Platform36" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(71216, 1455)
+
+[node name="Platform17" parent="sections/finalzone" instance=ExtResource("2_4m25g")]
+position = Vector2(62803, -340)
+rotation = 0.467546
+
+[node name="Player" parent="." instance=ExtResource("3_0ys05")]
+position = Vector2(379.61, 1491.64)
+
+[node name="EndDoor" parent="." instance=ExtResource("6_blju3")]
+position = Vector2(71842, 1040)
+
+[node name="BasicLevelPieces" parent="." instance=ExtResource("7_q2fer")]
+
+[node name="food" type="Node2D" parent="."]
+
+[node name="Food2" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(15424, 1749)
+type = 1
+
+[node name="Food3" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(15711, 1743)
+type = 1
+
+[node name="Food4" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(16069, 1746)
+type = 1
+
+[node name="Food5" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(16441, 1745)
+type = 1
+
+[node name="Food6" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(29545, 1624)
+type = 1
+
+[node name="Food7" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(30180, 1620)
+type = 1
+
+[node name="Food8" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(30843, 1636)
+type = 1
+
+[node name="Food9" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(31775, 1624)
+type = 1
+
+[node name="Food10" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(32495, 1624)
+type = 1
+
+[node name="Food" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(1444, 1703)
+type = 0
+
+[node name="Food11" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(1905, 1695)
+type = 0
+
+[node name="Food12" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(2485, 1695)
+type = 0
+
+[node name="Food13" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(2929, 1692)
+type = 0
+
+[node name="Food14" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(3439, 1687)
+type = 0
+
+[node name="Food15" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(4100, 1685)
+type = 0
+
+[node name="Food16" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(4607, 1685)
+type = 0
+
+[node name="Food17" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(5097, 1687)
+type = 0
+
+[node name="Food18" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(5793, 1682)
+type = 0
+
+[node name="Food19" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(6439, 1697)
+type = 0
+
+[node name="Food20" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(7153, 1675)
+type = 0
+
+[node name="Food21" parent="food" instance=ExtResource("8_ew0x1")]
+position = Vector2(7874, 1605)
+type = 0
