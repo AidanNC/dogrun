@@ -1,13 +1,14 @@
-[gd_scene load_steps=9 format=3 uid="uid://cub0uo0lkx44m"]
+[gd_scene load_steps=10 format=3 uid="uid://bs7352d01h1ps"]
 
 [ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="1_0hfor"]
 [ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="2_4m25g"]
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="2_rx6t5"]
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="3_0ys05"]
 [ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="4_g84tq"]
-[ext_resource type="PackedScene" uid="uid://dxjl3yqidljkb" path="res://scenes/end_door.tscn" id="6_blju3"]
+[ext_resource type="PackedScene" path="res://scenes/end_door.tscn" id="6_blju3"]
 [ext_resource type="PackedScene" uid="uid://dy44haftbw11u" path="res://scenes/basic_level_pieces.tscn" id="7_q2fer"]
 [ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="8_ew0x1"]
+[ext_resource type="PackedScene" uid="uid://c5tt16w1tgsnn" path="res://scenes/victory_screen.tscn" id="9_ltbe3"]
 
 [node name="HardLevel" type="Node2D"]
 
@@ -422,9 +423,6 @@ rotation = 0.467546
 [node name="Player" parent="." instance=ExtResource("3_0ys05")]
 position = Vector2(379.61, 1491.64)
 
-[node name="EndDoor" parent="." instance=ExtResource("6_blju3")]
-position = Vector2(71842, 1040)
-
 [node name="BasicLevelPieces" parent="." instance=ExtResource("7_q2fer")]
 
 [node name="food" type="Node2D" parent="."]
@@ -512,3 +510,7 @@ type = 0
 [node name="Food21" parent="food" instance=ExtResource("8_ew0x1")]
 position = Vector2(7874, 1605)
 type = 0
+
+[node name="EndDoor" parent="." instance=ExtResource("6_blju3")]
+position = Vector2(71855, 1005)
+nextlevel = ExtResource("9_ltbe3")

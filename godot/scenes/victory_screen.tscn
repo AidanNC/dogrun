@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5tt16w1tgsnn"]
+
+[ext_resource type="FontFile" uid="uid://c8xdd53q60051" path="res://assets/HanaleiFill-Regular.ttf" id="1_6jbe3"]
+
+[node name="VictoryScreen" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 214.0
+offset_top = 228.0
+offset_right = 2421.0
+offset_bottom = 774.0
+theme_override_fonts/font = ExtResource("1_6jbe3")
+theme_override_font_sizes/font_size = 380
+text = "YOU WIN!!"

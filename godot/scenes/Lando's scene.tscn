@@ -1,11 +1,14 @@
-[gd_scene load_steps=7 format=3 uid="uid://cvb4qjtl0olf0"]
+[gd_scene load_steps=10 format=3 uid="uid://dt5p2adhi86ur"]
 
 [ext_resource type="PackedScene" uid="uid://dy44haftbw11u" path="res://scenes/basic_level_pieces.tscn" id="1_oe7b8"]
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="2_xbdkw"]
-[ext_resource type="PackedScene" path="res://scenes/lower_platform.tscn" id="3_vpb0e"]
+[ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="3_vpb0e"]
 [ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="4_5h222"]
-[ext_resource type="PackedScene" path="res://scenes/platform.tscn" id="5_2hjvt"]
+[ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="5_2hjvt"]
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="6_pf0mb"]
+[ext_resource type="PackedScene" path="res://scenes/end_door.tscn" id="7_v44ma"]
+[ext_resource type="PackedScene" uid="uid://bs7352d01h1ps" path="res://scenes/hard_level.tscn" id="8_i05jo"]
+[ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="9_dskj6"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -174,3 +177,37 @@ position = Vector2(2819, 1640)
 
 [node name="Slug2" parent="." instance=ExtResource("6_pf0mb")]
 position = Vector2(3537, 1633)
+
+[node name="EndDoor" parent="." instance=ExtResource("7_v44ma")]
+position = Vector2(27166, 1316)
+nextlevel = ExtResource("8_i05jo")
+
+[node name="Food" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(711, 1625)
+
+[node name="Food2" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(1753, 1063)
+
+[node name="Food3" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(4378, 1588)
+
+[node name="Food4" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(6962, 1571)
+
+[node name="Food5" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(9811, 802)
+
+[node name="Food6" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(11022, 757)
+
+[node name="Food7" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(12759, 1121)
+
+[node name="Food8" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(15331, 861)
+
+[node name="Food9" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(15331, 212)
+
+[node name="Food10" parent="." instance=ExtResource("9_dskj6")]
+position = Vector2(20152, 1329)

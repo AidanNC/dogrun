@@ -1,28 +1,30 @@
-[gd_scene load_steps=11 format=3 uid="uid://duq34pcxha51a"]
+[gd_scene load_steps=13 format=3 uid="uid://duq34pcxha51a"]
 
 [ext_resource type="PackedScene" uid="uid://b3p36e1gl3630" path="res://scenes/player.tscn" id="1_4b21f"]
 [ext_resource type="PackedScene" uid="uid://bi35spk100761" path="res://scenes/slug.tscn" id="2_oxcol"]
-[ext_resource type="PackedScene" path="res://scenes/platform.tscn" id="3_qoqvr"]
-[ext_resource type="PackedScene" path="res://scenes/parallax_background.tscn" id="4_1xx7g"]
-[ext_resource type="PackedScene" path="res://scenes/lower_platform.tscn" id="5_vbyri"]
-[ext_resource type="PackedScene" path="res://scenes/parallax_foreground.tscn" id="6_c32sl"]
+[ext_resource type="PackedScene" uid="uid://3atharainroe" path="res://scenes/platform.tscn" id="3_qoqvr"]
+[ext_resource type="PackedScene" uid="uid://dnx1kc7gjs78a" path="res://scenes/parallax_background.tscn" id="4_1xx7g"]
+[ext_resource type="PackedScene" uid="uid://bo7l8f823wycy" path="res://scenes/lower_platform.tscn" id="5_vbyri"]
+[ext_resource type="PackedScene" uid="uid://u3gdb72ahf7p" path="res://scenes/parallax_foreground.tscn" id="6_c32sl"]
 [ext_resource type="PackedScene" uid="uid://5h74q73j5bif" path="res://scenes/Lizard.tscn" id="7_6pqbj"]
 [ext_resource type="PackedScene" uid="uid://be1kj04oplmyn" path="res://scenes/hud.tscn" id="8_ivvpb"]
 [ext_resource type="PackedScene" uid="uid://l20o2636q1wj" path="res://scenes/food.tscn" id="9_hq8hh"]
 [ext_resource type="PackedScene" uid="uid://bj3gmspbymmu5" path="res://scenes/score_hud.tscn" id="10_6wsos"]
+[ext_resource type="PackedScene" path="res://scenes/end_door.tscn" id="11_g5lio"]
+[ext_resource type="PackedScene" uid="uid://dt5p2adhi86ur" path="res://scenes/Lando's scene.tscn" id="12_1o88c"]
 
 [node name="World" type="Node2D"]
 position = Vector2(2264, 1320)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-2221, 238)
+position = Vector2(-1455, -92)
 enabled = false
 limit_top = -200
 limit_bottom = 2000
 editor_draw_limits = true
 
 [node name="Player" parent="." instance=ExtResource("1_4b21f")]
-position = Vector2(-2221, 238)
+position = Vector2(-1455, -92)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
@@ -118,3 +120,7 @@ position = Vector2(3431, 287)
 position = Vector2(3936, 173)
 
 [node name="scoreHUD" parent="." instance=ExtResource("10_6wsos")]
+
+[node name="EndDoor" parent="." instance=ExtResource("11_g5lio")]
+position = Vector2(4716, -166)
+nextlevel = ExtResource("12_1o88c")
